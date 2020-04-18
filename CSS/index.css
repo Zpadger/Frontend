@@ -1,0 +1,8 @@
+/*
+	在index.css文件中书写CSS代码
+	这个文件里面智能书写CSS格式的代码
+	选择器{属性：值;}
+	*/
+body{
+	background-color: #00f; /*f00 ---> #ff0000 */
+}
