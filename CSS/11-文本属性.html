@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文本属性</title>
+	<style type="text/css">
+		.zhang{
+			color: rgb(255,0,0);
+			/*十进制表示颜色的方式在CSS中没有浏览器兼容性的问题*/
+			text-decoration: underline;
+			/*下划线*/
+		}
+		h2{
+			text-align: center; 
+			/*水平居中*/
+			text-decoration: overline;
+			/*上划线*/
+		}
+		.jyqh{
+			text-decoration: line-through;
+			/*删除线*/
+		}
+		u{
+			text-decoration: none;
+			/*去掉文本修饰线*/
+		}
+		.cap{
+			text-transform: capitalize;
+			/*将英文字母的首字母转换为大写*/
+		}
+		.upper{
+			text-transform: uppercase;
+			/*将英文字母小写转大写*/
+			word-spacing: 20px;
+		}
+		.lower{
+			text-transform: lowercase;
+			/*将英文字母大写转小写*/
+			letter-spacing: 20px;
+		}
+		p{
+			text-indent: 2em;
+			/*1个em就表示一个汉字的位置 允许负值*/
+		}
+		.lh{
+			/*line-height: 30px;*/
+			/*行高的主要作用是来设置文本的垂直方向居中对齐*/
+			height: 40px;
+			line-height: 40px;
+			border: 1px solid #f00;
+			/*设置边框 1px 实线 红色*/
+
+		}
+	</style>
+</head>
+<body>
+	<h2>诛仙</h2>
+	<p>故事是从一个叫做<span class="zhang">张小凡</span>的普通少年开始的。<span class="jyqh">机缘巧合</span>，一位天音寺名为普智的高僧在临终前传授给他天音寺不外传的真法——大梵般若，希望能在张小凡身上圆自己佛道双修、参透生死的梦。
+
+后草庙村遭到血腥屠杀，<u>全村除了张小凡</u>和林惊羽两个小孩，和一个叫王二叔的樵夫外，无一幸免。青云山上的青云门见此惨案，不忍，于是收留了他们。林惊羽天资聪慧，被“龙首峰”首座苍松道人收为徒。而张小凡为人木讷，资质一般，无人喜爱，在推让中，“大竹峰”首座田不易收其为徒。
+
+入青云后，林惊羽惊才绝艳，修为神速，很快得苍松真传，并得赐“斩龙剑”。而张小凡因为佛道双修，导致修真进度甚为缓慢，师父和师兄们早已对他失去了希望，安排他在伙房做饭，不料却有一手好厨艺值得称赞。田灵儿，田不易之女，是张小凡的师姐，日久生情，张小凡一直在心底里暗恋田灵儿。可是，田灵儿没有看上资质愚钝的他，只是把他当作弟弟来爱护，心中所倾慕的是龙首峰才貌双全的师兄齐昊。</p>
+	<div class="cap">cascading style sheet</div>
+	<div class="upper">cascading style sheet</div>
+	<div class="lower">cascading style sheet</div>
+	<div class="lh">只是把他当作弟弟来爱护</div>
+
+</body>
+</html>
