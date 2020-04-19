@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>相邻元素选择器</title>
+	<style type="text/css">
+		/*相邻元素选择器
+		格式：E + F{属性:值;}
+		*/
+		/*作用： 要满足以下前提：
+				第一点：E元素与F元素必须是兄弟关系
+				第二点：E元素与F元素必须紧挨着 之前没有任何元素遮挡
+				第三点： 要求F元素一定在E元素下面
+				*/
+		.box + p{
+			color: #f00;
+			text-decoration: overline;
+		}
+	</style>
+</head>
+<body>
+	<p>我在上面</p>
+	<div class="box">
+		<h2>HTML</h2>	<!-- 第一个儿子 -->
+		<div>			<!-- 第二个儿子 -->
+			<h2>CSS</h2>	<!-- 第一个儿子又生了一个小孩 -->
+		</div>
+		<h2>PHP</h2>	<!-- 第三个儿子 -->
+	</div>
+	<!-- <div>CSS3</div> -->
+	<p>我在下面</p>
+</body>
+</html>
