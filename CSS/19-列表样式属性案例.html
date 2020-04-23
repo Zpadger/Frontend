@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>列表样式属性案例</title>
+	<style type="text/css">
+		/*第一步，需要给div设置一个边距并让这个div1在浏览器上面居中显示*/
+		.box{
+			width: 500px;
+			border: 1px solid #f00;
+			/*外边距 HTML中的表格标记属性 cellspacing
+			单元格与单元格之间的距离
+			在CSS中盒子与盒子之间的距离也成为外边距*/
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.box h2{
+			border: 1px solid skyblue;
+			height: 40px;
+			line-height: 40px;
+			color: #f00;
+			font-weight: normal;
+		}
+		.box li{
+			/*list-style-type: none;*/
+			height: 30px;
+			line-height: 30px;
+			border: 1px solid #ccc;
+			/*list-style-image: url();*/
+			/*简写属性*/
+			list-style: none url();
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<h2>新闻频道</h2>
+		<ul>
+			<li>多名青年</li>
+			<li>多名青年</li>
+			<li>多名青年</li>
+			<li>多名青年</li>
+		</ul>
+	</div>
+</body>
+</html>
