@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>伪类选择器</title>
+	<style type="text/css">
+		/*使用伪类选择器来给超级链接的不同状态设置样式*/
+		/*正常状态*/
+		a:link{
+			color: #f00;
+		}
+		/*访问过后状态*/
+		a:visited{
+			color: #000;
+		}
+		/*鼠标悬浮状态*/
+		a:hover{
+			color: gold;
+		}
+		/*激活状态*/
+		a:active{
+			color: #0f0;
+		}
+	</style>
+</head>
+<body>
+	<a href="http://www.baidu.com">baidu</a>
+	<a href="http://www.google.com">google</a>
+	<a href="http://www.sougou.com">sougou</a>
+</body>
+</html>
