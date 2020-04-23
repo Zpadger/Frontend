@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>属性选择器</title>
+	<style type="text/css">
+		/*通过属性选择器来匹配元素*/
+		/*第一个： [属性名]*/
+		/*p[align]{
+			color: #f00;
+		}*/
+		/*第二个： [属性名=值]*/
+		/*[align=center]{
+			color: #00f;
+		}*/
+		/*第三个： [属性名^=值]
+		先找到font标签，再匹配color属性值以#FF开头的元素*/
+/*		font[color^="#FF"]{
+			border: 1px solid #00f;
+		}*/
+		/*第四个： [属性名$=值]
+		先找到font标签，再匹配color属性值以00结尾的元素*/
+/*		font[color$="00"]{
+			border: 1px solid #00f;
+		}*/
+		/*第五个： [属性名*=值]
+		先找到font标签，再匹配color属性值包含aa的元素
+		不区分大小写*/
+		font[color*="aa"]{
+			border: 1px solid #00f;
+		}
+	</style>
+</head>
+<body>
+	<p align="center">程序员1</p>
+	<h2 align="center">程序员2</h2>
+	<p align="left">程序员3</p>
+	<font color="#FF0000">颜色</font>
+	<font color="#FFAA00">颜色</font>
+	<font color="#FFaabb">颜色</font>
+	<font color="#aacc00">颜色</font>
+	<font color="#FFaadd">颜色</font>
+	<font color="#ddaabb">颜色</font>
+</body>
+</html>
