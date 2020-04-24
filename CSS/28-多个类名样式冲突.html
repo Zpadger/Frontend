@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>样式冲突</title>
+	<style type="text/css">
+		.cls1{
+			color: #f00;
+		}
+		.cls2{
+			color: #00f;
+		}
+/*		一个标签内多个类名设置样式一样就会出现样式冲突
+		那么会以CSS中代码作为标准
+		谁写到后面就会以谁为标准
+		与HTML属性值的顺序无关*/
+	</style>
+</head>
+<body>
+	<p class="cls1 cls2">文本</p>
+</body>
+</html>
