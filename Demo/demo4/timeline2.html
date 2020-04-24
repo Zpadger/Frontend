@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    *, *:after, *:before {
+      box-sizing: border-box;
+    }
+    .main {
+      width: 90%;
+      max-width: 69em;
+      margin: 0 auto;
+      padding: 0 1.875em 3.125em 1.875em;
+    }
+    .cbp_tmtimeline {
+      margin: 30px 0 0 0;
+      padding: 0;
+      list-style: none;
+      position: relative;
+    }
+    .cbp_tmtimeline:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 10px;
+      background: #afdcf8;
+      left: 20%;
+      margin-left: -10px;
+    }
+    .cbp_tmtimeline > li {
+      position: relative;
+    }
+    .cbp_tmtimeline > li .cbp_tmtime {
+      display: block;
+      width: 25%;
+      padding-right: 100px;
+      position: absolute;
+    }
+    .cbp_tmtimeline > li .cbp_tmicon {
+      width: 40px;
+      height: 40px;
+      font-family: 'ecoico';
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      font-size: 1.4em;
+      line-height: 40px;
+      -webkit-font-smoothing: antialiased;
+      position: absolute;
+      color: #fff;
+      background: #46a4da;
+      border-radius: 50%;
+      box-shadow: 0 0 0 8px #afdcf8;
+      text-align: center;
+      left: 20%;
+      top: 0;
+      margin: 0 0 0 -25px;
+    }
+    .cbp_tmicon-phone:before {
+      content: "\e000";
+    }
+    .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
+      background: #6cbfee;
+    }
+    .cbp_tmtimeline > li .cbp_tmlabel {
+      margin: 0 0 15px 25%;
+      background: #3594cb;
+      color: #fff;
+      padding: 2em;
+      font-size: 1.2em;
+      font-weight: 300;
+      line-height: 1.4;
+      position: relative;
+      border-radius: 5px;
+    }
+    .cbp_tmtimeline > li .cbp_tmlabel h2 {
+      margin-top: 0px;
+      padding: 0 0 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.4);
+    }
+    .cbp_tmtimeline > li .cbp_tmlabel:after {
+      right: 100%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-right-color: #3594cb;
+      border-width: 10px;
+      top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <ul class="cbp_tmtimeline">
+      <li>
+        <time class="cbp_tmtime" datetime="2018-04-10 18:30"><span>4/10/18</span> <span>18:30</span></time>
+        <div class="cbp_tmicon cbp_tmicon-phone"></div>
+        <div class="cbp_tmlabel">
+          <h2>Ricebean black-eyed pea</h2>
+          <p>Winter purslane courgette pumpkin quandong komatsuna fennel green bean cucumber watercress. Pea sprouts wattle seed rutabaga okra yarrow cress avocado grape radish bush tomato ricebean black-eyed pea maize eggplant. Cabbage lentil cucumber chickpea sorrel gram garbanzo plantain lotus root bok choy squash cress potato summer purslane salsify fennel horseradish dulse. Winter purslane garbanzo artichoke broccoli lentil corn okra silver beet celery quandong. Plantain salad beetroot bunya nuts black-eyed pea collard greens radish water spinach gourd chicory prairie turnip avocado sierra leone bologi.</p>
+        </div>
+      </li>
+      <li>
+        <time class="cbp_tmtime" datetime="2018-04-11T12:04"><span>4/11/18</span> <span>12:04</span></time>
+        <div class="cbp_tmicon cbp_tmicon-screen"></div>
+        <div class="cbp_tmlabel">
+          <h2>Greens radish arugula</h2>
+          <p>Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.</p>
+        </div>
+      </li>
+      <li>
+        <time class="cbp_tmtime" datetime="2018-04-18 05:36"><span>4/13/18</span> <span>05:36</span></time>
+        <div class="cbp_tmicon cbp_tmicon-mail"></div>
+        <div class="cbp_tmlabel">
+          <h2>Sprout garlic kohlrabi</h2>
+          <p>Parsnip lotus root celery yarrow seakale tomato collard greens tigernut epazote ricebean melon tomatillo soybean chicory broccoli beet greens peanut salad. Lotus root burdock bell pepper chickweed shallot groundnut pea sprouts welsh onion wattle seed pea salsify turnip scallion peanut arugula bamboo shoot onion swiss chard. Avocado tomato peanut soko amaranth grape fennel chickweed mung bean soybean endive squash beet greens carrot chicory green bean. Tigernut dandelion sea lettuce garlic daikon courgette celery maize parsley komatsuna black-eyed pea bell pepper aubergine cauliflower zucchini. Quandong pea chickweed tomatillo quandong cauliflower spinach water spinach.</p>
+        </div>
+      </li>
+      <li>
+        <time class="cbp_tmtime" datetime="2018-04-15 18:15"><span>4/15/18</span> <span>18:15</span></time>
+        <div class="cbp_tmicon cbp_tmicon-phone"></div>
+        <div class="cbp_tmlabel">
+          <h2>Watercress ricebean</h2>
+          <p>Peanut gourd nori welsh onion rock melon mustard jícama. Desert raisin amaranth kombu aubergine kale seakale brussels sprout pea. Black-eyed pea celtuce bamboo shoot salad kohlrabi leek squash prairie turnip catsear rock melon chard taro broccoli turnip greens. Fennel quandong potato watercress ricebean swiss chard garbanzo. Endive daikon brussels sprout lotus root silver beet epazote melon shallot.</p>
+        </div>
+      </li>
+      <li>
+        <time class="cbp_tmtime" datetime="2018-04-16 21:30"><span>4/16/18</span> <span>21:30</span></time>
+        <div class="cbp_tmicon cbp_tmicon-earth"></div>
+        <div class="cbp_tmlabel">
+          <h2>Courgette daikon</h2>
+          <p>Parsley amaranth tigernut silver beet maize fennel spinach. Ricebean black-eyed pea maize scallion green bean spinach cabbage jícama bell pepper carrot onion corn plantain garbanzo. Sierra leone bologi komatsuna celery peanut swiss chard silver beet squash dandelion maize chicory burdock tatsoi dulse radish wakame beetroot.</p>
+        </div>
+      </li>
+      <li>
+        <time class="cbp_tmtime" datetime="2018-04-17 12:11"><span>4/17/18</span> <span>12:11</span></time>
+        <div class="cbp_tmicon cbp_tmicon-screen"></div>
+        <div class="cbp_tmlabel">
+          <h2>Greens radish arugula</h2>
+          <p>Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.</p>
+        </div>
+      </li>
+      <li>
+        <time class="cbp_tmtime" datetime="2018-04-18 09:56"><span>4/18/18</span> <span>09:56</span></time>
+        <div class="cbp_tmicon cbp_tmicon-phone"></div>
+        <div class="cbp_tmlabel">
+          <h2>Sprout garlic kohlrabi</h2>
+          <p>Parsnip lotus root celery yarrow seakale tomato collard greens tigernut epazote ricebean melon tomatillo soybean chicory broccoli beet greens peanut salad. Lotus root burdock bell pepper chickweed shallot groundnut pea sprouts welsh onion wattle seed pea salsify turnip scallion peanut arugula bamboo shoot onion swiss chard. Avocado tomato peanut soko amaranth grape fennel chickweed mung bean soybean endive squash beet greens carrot chicory green bean. Tigernut dandelion sea lettuce garlic daikon courgette celery maize parsley komatsuna black-eyed pea bell pepper aubergine cauliflower zucchini. Quandong pea chickweed tomatillo quandong cauliflower spinach water spinach.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
