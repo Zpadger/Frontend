@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>important</title>
+	<style type="text/css">
+/*		使用！important属性的语法格式
+		属性:值 ！important;
+		如果！important提升的是选择器的权重，那么在刷新浏览器之后
+		文本这两个字的大小应该是20px颜色为红色
+		但是如果提升的是属性的权重
+		文本这两个字大小应该是100px颜色为红色
+		结果显示！important提升的是属性的权重*/
+		p{
+			color: #f00!important;
+			/*权重值会变得无穷大*/
+			font-size: 20px;
+		}
+		.p1{
+			color: #0f0;
+		}
+		#p2{
+			color: #00f;
+			font-size: 100px;
+		}
+	</style>
+</head>
+<body>
+	<p class="p1" id="p2">程序员</p>
+</body>
+</html>

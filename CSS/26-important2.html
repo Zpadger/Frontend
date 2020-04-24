@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>！important不能提升继承过来的权重</title>
+	<style type="text/css">
+		/*先给div标签来设置样式*/
+		div{
+			color: #f00!important;
+			/*!important不能提升继承过来的权重*/
+		}
+		p{
+			color: #00f;
+		}
+	</style>
+</head>
+<body>
+	<p>程序员</p>
+</body>
+</html>
