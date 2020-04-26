@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>margin居中</title>
+	<style type="text/css">
+		.box{
+			width: 100px;
+			/*如果该元素没有设置宽度 那么就会占据父元素100%宽度*/
+			height: 100px;
+			background-color: #f00;
+/*			margin-left: auto;
+			margin-right: auto;
+			margin-top: 100px;
+			margin-bottom: 100px;*/
+			/*使用简写属性来描述*/
+			margin: 100px auto;
+/*			使用margin实现水平居中时 一定要有固定的宽度 给盒子设置一个宽度
+			只有块元素可以实现水平居中 行内元素不行
+			只有标准文档流的盒子才可以使用margin水平居中
+			margin属性用来实现盒子水平居中而非文本*/
+		}
+/*		p{
+			height: 50px;
+			background-color: skyblue;
+		}*/
+		span{
+			/*width: 100px;*/
+			/*行内元素无法设置宽度 无法水平居中*/
+			background-color: skyblue;
+			margin: 100px auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<!-- <p></p> -->
+	<span>看看我在哪里</span>
+</body>
+</html>
