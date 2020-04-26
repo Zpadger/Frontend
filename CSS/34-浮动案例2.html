@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动案例</title>
+	<style type="text/css">
+		/*在CSS代码中的第一步，都是清楚HTML标签的默认内填充和外边距*/
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			background-image: url(bg.jpg);
+			color: #f00;
+		}
+		.nav{
+			width: 960px;
+			height: 40px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		.nav ul{
+			/*将列表前面的项目符号去除*/
+			list-style: none;
+		}
+		.nav ul li{
+			/*把每一个li标签进行向左浮动
+			li标签本来是块状元素，让它浮动就能让每一个li排成一行*/
+			float: left;
+			width: 120px;
+			/*将文本居中*/
+			text-align: center;
+			height: 40px;
+			line-height: 40px;
+		}
+		a{
+			text-decoration: none;;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<ul>
+			<li><a href="#">网站栏目</a></li>
+			<li><a href="#">网站栏目</a></li>
+			<li><a href="#">网站栏目</a></li>
+			<li><a href="#">网站栏目</a></li>
+			<li><a href="#">网站栏目</a></li>
+			<li><a href="#">网站栏目</a></li>
+			<li><a href="#">网站栏目</a></li>
+			<li><a href="#">网站栏目</a></li>
+		</ul>
+	</div>
+</body>
+</html>
