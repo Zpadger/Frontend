@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>绝对定位实现拉勾网案例</title>
+	<style type="text/css">
+		/*第一步：清除内填充与外边框样式*/
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.box{
+			width: 300px;
+			height: 196px;
+			border: 1px solid #000;
+			margin: 100px auto;
+			/*相对定位*/
+			position: relative;
+		}
+		.box span{
+			/*绝对定位*/
+			position: absolute;
+			left: 20px;
+			top: -10px;
+		}
+	</style>
+<body>
+	<div class="box">
+		<div><img src="">></div>
+		<span><img src="">></span>
+	</div>
+</body>
+</html>
