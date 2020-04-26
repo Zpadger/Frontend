@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>行内元素浮动</title>
+	<style type="text/css">
+		.box{
+			width: 600px;
+			border: 1px solid #000;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.s1{
+			/*给行内元素设置宽高*/
+			width: 100px;
+			height: 100px;
+			background-color: #f00;
+			/*向左浮动*/
+			float: left;
+		}
+		.s2{
+			background-color: #0f0;
+		}
+		.s3{
+			background-color: #f00;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<span class="s1">文本1</span>
+		<span class="s2">文本2</span>
+		<span class="s3">文本3</span>
+	</div>
+</body>
+</html>
