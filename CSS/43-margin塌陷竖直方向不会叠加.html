@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>竖直方向的margin值不会叠加会取较大值</title>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+		}
+		.div1{
+			background-color: #f00;
+			/*下外边距*/
+			margin-bottom: 20px;
+		}
+		.div2{
+			background-color: #00f;
+			/*上外边距*/
+			margin-top: 40px;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+	<div class="div2"></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>水平方向没有margin塌陷问题</title>
+	<style type="text/css">
+		.s1{
+			background-color: #f00;
+			/*右外边距*/
+			margin-right: 20px;
+		}
+		.s2{
+			background-color: #00f;
+			/*左外边距*/
+			margin-left: 40px;
+		}
+	</style>
+</head>
+<body>
+	<span class="s1">文本一</span><span class="s2">文本二</span>
+</body>
+</html>
