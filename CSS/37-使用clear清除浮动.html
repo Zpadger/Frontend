@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>使用clear清除浮动</title>
+	<style type="text/css">
+		.box{
+			width: 600px;
+			border: 1px solid #000;
+			margin-left: auto;
+			margin-right: auto;
+		}
+/*		.box div{
+			width: 100px;
+			height: 100px;
+		}*/
+		.div1{
+			width: 100px;
+			height: 100px;
+			background-color: #f00;
+			float: left;
+		}
+		.div2{
+			width: 100px;
+			height: 100px;
+			background-color: #0f0;
+			float: left;
+		}
+		.div3{
+			width: 100px;
+			height: 100px;
+			background-color: #00f;
+			float: right;
+		}
+		.clear{
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="div1"></div>
+		<div class="div2"></div>
+		<div class="div3"></div>
+<!-- 		在最后一个浮动元素的下面新建一个空白的div
+		这个div的作用就是用于清除浮动 -->
+		<div class="clear"></div>
+	</div>
+	<h2>浮动与清除浮动</h2>
+</body>
+</html>
+<!-- 清除浮动有三种方法：
+clear:both;两者都清除
+这个属性一般是用在最后
+一个浮动元素的下面
+在最后一个浮动元素的下面新建一个空白的div
+这个div什么都不放
+只做一件事就是清除浮动 -->

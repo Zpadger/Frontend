@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>使用overflow_hidden来清除浮动</title>
+	<style type="text/css">
+		ul{
+			list-style: none;
+		}
+		ul li{
+			float: left;
+			border: 1px solid #f00;
+		}
+	</style>
+</head>
+<body>
+	<ul style="overflow: hidden;">
+	<!-- 给li父元素设置一个overf:hidden的属性
+	一般是将列表的浮动给清除 -->
+		<li>栏目管理1</li>
+		<li>栏目管理2</li>
+		<li>栏目管理3</li>
+		<li>栏目管理4</li>
+		<li>栏目管理5</li>
+		<li>栏目管理6</li>
+		<li>栏目管理7</li>
+		<li>栏目管理8</li>
+		<li>栏目管理9</li>
+		<li>栏目管理10</li>
+	</ul>
+</body>
+</html>
