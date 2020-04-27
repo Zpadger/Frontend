@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>结构伪类</title>
+	<style type="text/css">
+		/*使用结构伪类选择器来匹配元素*/
+		/*匹配第一个孩子
+		格式： E:first-child{属性:值;};*/
+		.box ul li:first-child{
+			color: #f00;
+			width: 100px;
+			height: 30px;
+			line-height: 30px;
+			border: 1px solid #000;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<ul>
+			<li>程序员1</li>
+			<li>程序员2</li>
+			<li>程序员3</li>
+			<li>程序员4</li>
+			<li>程序员5</li>
+			<li>程序员6</li>
+			<li>程序员7</li>
+			<li>程序员8</li>
+			<li>程序员9</li>
+			<li>程序员10</li>
+		</ul>
+	</div>
+</body>
+</html>
