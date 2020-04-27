@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绘制线性渐变</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+    您的浏览器不支持 HTML5 canvas 标签。
+</canvas>
+
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+
+    // Create gradient
+    // createLinearGradient(x,y,x1,y1)创建线条渐变
+    var grd = ctx.createLinearGradient(0,0,200,0);
+    // 渐变对象必须使用两种或以上的停止颜色
+    grd.addColorStop(0,"red");
+    grd.addColorStop(1,"white");
+
+    // Fill with gradient
+    ctx.fillStyle = grd;
+    ctx.fillRect(10,10,150,80);
+</script>
+</body>
+</html>
