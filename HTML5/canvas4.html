@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>画布绘制圆形</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+    您的浏览器不支持 HTML5 canvas 标签。
+</canvas>
+
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    // arc(x,y,r,start,stop)
+    ctx.arc(95,50,40,1,2*Math.PI);
+    ctx.stroke();
+</script>
+</body>
+</html>
