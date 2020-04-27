@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>圆角矩形</title>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+			border: 1px solid #f00;
+		}
+		/*使用结构伪类选择器来匹配元素*/
+		div:nth-child(1){
+			/*左上 右上 右下 左下*/
+			border-radius: 10px 20px 30px 40px;
+		}
+		div:nth-child(2){
+			border-radius: 20px;
+		}
+		div:nth-child(3){
+			border-radius: 10px 0px 0px 20px;
+		}
+		div:nth-child(4){
+			/*圆形*/
+			border-radius: 50px;
+			background-color: #ccc;
+		}
+		div:nth-child(5){
+			/*椭圆*/
+			width: 100px;
+			height: 40px;
+			border-radius: 20px;
+			/*background-color: #ccc;*/
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>
