@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>first-letter</title>
+	<style type="text/css">
+		.box{
+			width: 40%;
+			margin: 100px auto;
+			font-size: 14px;
+			border: 1px solid #444;
+			color: #333;
+		}
+		.box:first-letter{
+			/*操作当前元素的第一个字*/
+			color: #f00;
+			font-size: 40px;
+			padding: 20px;
+		}
+		.box:first-line{
+			color: #9F79EE;
+		}
+		.box::before{
+			/*要在当前元素最前面插入文字 必须将文字放在content中*/
+			content: "程序员";
+		}
+		/*最后面*/
+		.box::after{
+			content: "hello";
+		}
+	</style>
+</head>
+<body>
+	<div class="box">故事是从一个叫做张小凡的普通少年开始的。机缘巧合，一位天音寺名为普智的高僧在临终前传授给他天音寺不外传的真法——大梵般若，希望能在张小凡身上圆自己佛道双修、参透生死的梦。
+
+后草庙村遭到血腥屠杀，全村除了张小凡和林惊羽两个小孩，和一个叫王二叔的樵夫外，无一幸免。青云山上的青云门见此惨案，不忍，于是收留了他们。林惊羽天资聪慧，被“龙首峰”首座苍松道人收为徒。而张小凡为人木讷，资质一般，无人喜爱，在推让中，“大竹峰”首座田不易收其为徒。</div>
+</body>
+</html>
