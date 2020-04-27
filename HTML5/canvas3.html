@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>画布画线</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+    您的浏览器不支持 HTML5 canvas 标签。
+</canvas>
+
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    // 定义线条开始坐标
+    ctx.moveTo(0,0);
+    // 定义线条结束坐标
+    ctx.lineTo(200,100);
+    ctx.stroke();
+    // stroke() 方法会实际地绘制出通过 moveTo() 和 lineTo() 方法定义的路径。
+    // 默认颜色是黑色。
+</script>
+</body>
+</html>
