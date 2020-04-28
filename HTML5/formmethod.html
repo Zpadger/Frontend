@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单提交的方式</title>
+</head>
+<body>
+<!--formmethod 属性定义了表单提交的方式-->
+<!--formmethod 属性覆盖了 <form> 元素的 method 属性-->
+<!--注意: 该属性可以与 type="submit" 和 type="image" 配合使用-->
+<form action="demo-form.php" method="get">
+    First name: <input type="text" name="fname"><br>
+    Last name: <input type="text" name="lname"><br>
+    <input type="submit" value="提交">
+    <input type="submit" formmethod="post" formaction="demo-post.php" value="使用 POST 提交">
+</form>
+
+<p><strong>注意：</strong> Internet Explorer 9及更早 IE 版本不支持 input 标签的 formmethod 属性。</p>
+
+</body>
+</html>

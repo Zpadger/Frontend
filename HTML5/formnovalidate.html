@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单提交时无需验证</title>
+</head>
+<body>
+<!--novalidate 属性是一个 boolean 属性.-->
+<!--novalidate属性描述了 <input> 元素在表单提交时无需被验证。-->
+<!--formnovalidate 属性会覆盖 <form> 元素的novalidate属性.-->
+<!--注意: formnovalidate 属性与type="submit一起使用-->
+<form action="demo-form.php">
+    E-mail: <input type="email" name="userid"><br>
+    <input type="submit" value="提交"><br>
+    <input type="submit" formnovalidate="formnovalidate" value="不验证提交">
+</form>
+
+<p><strong>注意：</strong> Internet Explorer 9及更早 IE 版本,或 Safari 不支持 input 标签的 formnovalidate 属性。</p>
+
+</body>
+</html>

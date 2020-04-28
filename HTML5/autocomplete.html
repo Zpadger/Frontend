@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自动填充</title>
+</head>
+<body>
+<!--autocomplete 属性规定 form 或 input 域应该拥有自动完成功能 -->
+<!--当用户在自动完成域中开始输入时，浏览器应该在该域中显示填写的选项 -->
+<!--自动填充功能-->
+<form action="demo-form.php" autocomplete="on">
+    First Name:<input type="text" name="fname"><br>
+    Last Name:<input type="text" name="lname"><br>
+    E-mail:<input type="email" name="email" autocomplete="on">
+    <input type="submit">
+</form>
+
+<p>填写并提交表单，然后重新刷新页面查看如何自动填充内容。</p>
+<p>注意 form 的 autocomplete 属性为  "on"（开），但是 e-mail 自动为“off”（关）。</p>
+
+</body>
+</html>
