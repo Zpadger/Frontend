@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用地理定位</title>
+</head>
+<body>
+<p id="demo">点击按钮获取您当前坐标（可能需要比较长的时间获取）：</p>
+<button onclick="getLocation()">点我</button>
+<script>
+    var x = document.getElementById("demo");
+    function getlocation() {
+        if(navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(showPosition);
+        }
+        else {
+            x.innerHTML = "浏览器不支持获取地理位置";
+        }
+
+        function showPosition(position) {
+            x.innerHTML = "纬度" + position.coords.latitude +
+                    "<br>经度:" + position.coords.longitude;
+        }
+    }
+</script>
+</body>
+</html>
+<!--检测是否支持地理定位-->
+<!--如果支持，则运行 getCurrentPosition() 方法。如果不支持，则向用户显示一段消息。-->
+<!--如果getCurrentPosition()运行成功，则向参数showPosition中规定的函数返回一个coordinates对象-->
+<!--showPosition() 函数获得并显示经度和纬度-->
