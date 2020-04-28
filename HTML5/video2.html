@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>视频控制</title>
+</head>
+<body>
+<div style="text-align: center">
+    <button onclick = "playPause()">▶️️/⏸</button>
+    <button onclick = "makeBig()">➕</button>
+    <button onclick = "makeSmall()">➖</button>
+    <button onclick = "makeNormal()">🔄</button>
+    <br>
+    <video id="video1" width="420">
+        <source src="source/video.mp4" type="video/mp4">
+        您的浏览器不支持HTML5 video标签
+    </video>
+</div>
+
+<script>
+    var myVideo = document.getElementById("video1");
+
+    function playPause() {
+        if(myVideo.paused)
+            myVideo.play();
+        else
+            myVideo.pause();
+    }
+    function makeBig() {
+        myVideo.width += 60;
+    }
+    function makeSmall() {
+        myVideo.width -= 60;
+    }
+    function makeNormal() {
+        myVideo.width = 420;
+    }
+</script>
+</body>
+</html>
