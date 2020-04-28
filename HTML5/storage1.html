@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>localStorage对象</title>
+</head>
+<body>
+
+<div id="result"></div>
+<script>
+    if (typeof(Storage) !== "undefined"){
+        localStorage.sitename = "菜鸟教程";
+        document.getElementById("result").innerHTML = "网站名:" + localStorage.sitename;
+    }
+    else {
+        document.getElementById("result").innerHTML = "对不起，您的浏览器不支持Web存储";
+    }
+</script>
+</body>
+</html>
