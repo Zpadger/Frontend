@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击改变灯泡状态</title>
+</head>
+<body>
+
+<script>
+    function changeImage() {
+        var s = document.getElementById('myimage');
+        s.src = s.src.match('bulboff')?"images/pic_bulbon.gif":"images/pic_bulboff.gif";
+    }
+</script>
+<img id="myimage" onclick="changeImage()" src="images/pic_bulboff.gif" alt="">
+<p>点击灯泡可以打开或关闭这盏灯</p>
+</body>
+</html>

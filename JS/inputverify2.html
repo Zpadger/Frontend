@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>判断输入是否为数字</title>
+</head>
+<body>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("demo").value;
+        if (isNaN(x) || x.replace(/(^\s*)|(\s*$)/g,"") == ""){
+            alert("不是数字");
+        }
+    }
+</script>
+<h1>我的第一段JavaScript</h1>
+<p>请输入数字。如果输入值不是数字，浏览器会弹出提示框。</p>
+<input type="text" id="demo">
+<button type="button" onclick="myFunction()">点击提交</button>
+</body>
+</html>
