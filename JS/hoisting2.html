@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>初始化不会提升</title>
+</head>
+<body>
+
+<p id="demo"></p>
+<script>
+    var x = 5; //初始化x
+    elem = document.getElementById("demo");
+    elem.innerHTML = "x为：" + x + "，y为：" + y;
+    var y = 7; //初始化y
+</script>
+</body>
+</html>

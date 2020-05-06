@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>访问对象属性</title>
+</head>
+<body>
+
+<p>
+    有两种方式可以访问对象属性：
+</p>
+<p>
+    你可以使用 .property 或 ["property"].
+</p>
+<p id="demo"></p>
+<script>
+    var person = {
+        firstName : "John",
+        lastName : "Doe",
+        weight : "90",
+        height : "180",
+        id : 5566
+    };
+    document.getElementById("demo").innerHTML =
+        person.firstName + " " + person.lastName;
+
+    document.getElementById("demo").innerHTML =
+        person["height"] + "cm " + person["weight"] + "Kg";
+</script>
+
+</body>
+</html>

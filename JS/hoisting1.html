@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>变量提升</title>
+</head>
+<body>
+
+<p id="demo"></p>
+<script>
+    x = 5; //x设置为5
+    elem = document.getElementById("demo");
+    elem.innerHTML = x;
+    var x; //声明
+    // JavaScript 中，变量可以在使用后声明，也就是变量可以先使用再声明
+    // JavaScript 中，函数及变量的声明都将被提升到函数的最顶部
+</script>
+</body>
+</html>
