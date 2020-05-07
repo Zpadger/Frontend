@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>约束验证中setCustomValidity自定义错误信息的使用</title>
+</head>
+<body>
+
+<p>输入数字并点击验证按钮</p>
+
+<input id="id1" type="number" min="100" max="300" required>
+<button onclick="myFunction()">验证</button>
+
+<p>如果输入的数字小于100或者大于300，会提示错误信息</p>
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+        var inpObj = document.getElementById("id1");
+        inpObj.setCustomValidity(''); //取消自定义提醒的方式
+        if (inpObj.checkValidity() == false){
+            if (inpObj.value == ""){
+                inpObj.setCustomValidity("不能为空！");
+            }else if(inpObj.value < 100 || inpObj.value > 300){
+                inpObj.setCustomValidity("请重新输入数值100~300之间！");
+            }
+            document.getElementById("demo").innerHTML = inpObj.validationMessage;
+        }else {
+            document.getElementById("demo").innerHTML = "输入正确";
+        }
+    }
+</script>
+</body>
+</html>

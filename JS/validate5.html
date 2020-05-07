@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript checkValidity 实例</title>
+</head>
+<body>
+<p>输入数字并点击验证按钮</p>
+<input type="number" id="id1" max="300" min="100" required>
+<button type="button" onclick="myFunction()">点我</button>
+<p>如果输入数字100~300之外，会提示错误信息</p>
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("id1");
+        x.setCustomValidity(""); //使用前先取消自定义，否则下次点击checkValidity会返回false
+        if (x.checkValidity() == false){
+            x.setCustomValidity("错误");
+            document.getElementById("demo").innerHTML = x.validationMessage;
+        }
+        else {
+            x.setCustomValidity("正确");
+            document.getElementById("demo").innerHTML = x.validationMessage;
+        }
+    }
+</script>
+</body>
+</html>
