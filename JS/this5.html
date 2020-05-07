@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>this关键字——显式函数绑定</title>
+</head>
+<body>
+
+<h2>JavaScript this 关键字</h2>
+<p>实例中 <strong>this</strong> 指向了 person2，即便它是 person1 的方法:</p>
+
+<p id="demo"></p>
+
+<script>
+    var person1 = {
+        fullName: function () {
+            return this.firstName + " " + this.lastName;
+        }
+    }
+    var person2 = {
+        firstName:"John",
+        lastName:"Doe",
+    }
+    var x = person1.fullName.call(person2);
+    // apply call允许切换函数执行的上下文环境（context），即 this 绑定的对象
+    document.getElementById("demo").innerHTML = x;
+</script>
+</body>
+</html>
