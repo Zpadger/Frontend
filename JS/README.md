@@ -11,7 +11,7 @@ var obj = {
 &emsp;&emsp;}  
 };  
 obj.sayName();  //kxy
-* sayName函数作为对象obj的方法调用，所以函数体中的this就代表obj对象。  
+sayName函数作为对象obj的方法调用，所以函数体中的this就代表obj对象。  
 
  
 
@@ -54,3 +54,24 @@ sayName.apply(person);  //kxy
 sayName.apply();  //window  
 
 当以函数调用模式调用sayName时，this代表window；当用apply模式调用sayName，并给它传入第一个参数person时，this被绑定到person对象上。如果不给apply传入任何参数，则this代表window。
+
+### 例子  
+* 相关练习：  
+>var name = "window";  
+function showName(){  
+&emsp;&emsp;console.log(this.name);  
+}  
+var person1 = {  
+&emsp;&emsp;name: "kxy",  
+&emsp;&emsp;sayName: showName  
+}  
+var person2 = {  
+&emsp;&emsp;name: "Jake",  
+&emsp;&emsp;sayName: function(){  
+&emsp;&emsp;&emsp;&emsp;var fun = person1.sayName;  
+&emsp;&emsp;&emsp;&emsp;fun();  
+&emsp;&emsp;}  
+}  
+person1.sayName();  //kxy  
+person2.sayName();  //window  
+
