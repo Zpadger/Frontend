@@ -2,6 +2,7 @@
 
 ### 一、方法调用模式  
 * 当函数被保存为一个对象的属性时，它就可称为这个对象的方法。当一个方法被调用时，this被绑定到这个对象上。如果调用表达式包含一个提取属性的动作(.或[])，那么被称为方法调用。例如：  
+
 >var name = "window";  
 var obj = {  
 &emsp;&emsp;name: "kxy",  
@@ -9,63 +10,47 @@ var obj = {
 &emsp;&emsp;&emsp;&emsp;console.log(this.name);  
 &emsp;&emsp;}  
 };  
-obj.sayName(); //kxy
-* 输入中包含'/'  
+obj.sayName();  //kxy
+* sayName函数作为对象obj的方法调用，所以函数体中的this就代表obj对象。  
 
  
 
 ### 二、函数调用模式    
 
-#### Q:Python中* args和** kwargs的含义？  
-A:在python中，* args和 ** kwargs通常使用在函数定义里。*args 和 ** kwargs 都允许你给函数传不定数量的参数，即使在定义函数的时候不知道调用者会传递几个参数。  
-ps: * args和 ** kwargs只是一个大家都遵守的习惯，名字可以任意写的 。
+* 当一个函数并非一个对象的属性时，那么它就是被当做函数来调用的。在此模式下，this被绑定为全局变量，在浏览器环境下就是window对象。例如：
 
-#### 1.* args例子  
-* args能够接收不定量的非关键字参数，会把位置参数转化为tuple（元组，非键值对的参数组），例子如下面代码所示：
->def func(* args):  
-&emsp;&emsp;for i in args:  
-&emsp;&emsp;&emsp;&emsp;print(i)  
-func(1,2,3,4)  
+>var name = "window";  
+function sayName(){  
+&emsp;&emsp;console.log(this.name);  
+}  
+sayName();
 
-运行结果：  
-1  
-2  
-3  
-4
+sayName以函数调用模式调用，所以函数体重的this代表window对象。  
+
 
 ### 三、构造函数模式
-** kwargs允许你传递不定量个关键字参数。如果你需要在函数中定义不定量个命名参数，那么你就要使用** kwargs了，它会把关键字参数转化为dict（词典，键值对参数组），例子如下面代码所示：
->def func(** kwargs):  
-&emsp;&emsp;for i in kwargs:  
-&emsp;&emsp;&emsp;&emsp;print(i,kwargs[i])  
-func(a=1,b=2,c=3,d=4)  
+* 如果在一个函数前面加上new关键字来调用，那么就会创建一个连接到该函数的prototype成员的新对象，同时，this会被绑定到这个新对象上。这种情况下，这个函数就可以成为此对象的构造函数。例如：  
 
-运行结果：  
-a&nbsp;1  
-b&nbsp;2  
-c&nbsp;3  
-d&nbsp;4  
+>function Obj(){  
+&emsp;&emsp;this.name = "kxy";
+var person = new Obj();  
+console.log(person.name);  //kxy  
 
-下面演示个错误的案例，报错：  
->"func() takes 0 positional arguments but 4 were given"  
-“未定义位置型参数，却收到了4个参数”  
+Obj作为构造函数被调用，函数体内的this被绑定为新创建的对象person。
 
->def func(** kwargs):  
-&emsp;&emsp;for i in kwargs:  
-&emsp;&emsp;&emsp;&emsp;print(i,kwargs[i])  
-func(1,2,3,4)  
-
->运行结果：  
-Traceback (most recent call last):  
-&emsp;File "F:/pyworkspace/hello.py", line 4, in <module>  
-&emsp;&emsp;func(1,2,3,4)  
-TypeError: func() takes 0 positional arguments but 4 were given
-
-也就是说，kwargs需要的是带名称的参数，而args代表位置型参数（无名称参数）。从英语上来说，kwargs多出来的kw其实就是keyword的意思，表示这是“键值对”参数，就像字典那样 。
 
 ### 四、apply调用模式
-** kwargs允许你传递不定量个关键字参数。如果你需要在函数中定义不定量个命名参数，那么你就要使用** kwargs了，它会把关键字参数转化为dict（词典，键值对参数组），例子如下面代码所示：
->def func(** kwargs):  
-&emsp;&emsp;for i in kwargs:  
-&emsp;&emsp;&emsp;&emsp;print(i,kwargs[i])  
-func(a=1,b=2,c=3,d=4)  
+* 在JS中，函数也是对象，所有函数对象都有两个方法：apply和call，这两个方法可以让我们构建一个参数数组传递给调用函数，也允许我们改变this的值。例如：  
+
+>var name = "window";  
+var person = {  
+&emsp;&emsp;name: "kxy"  
+};  
+function sayName(){  
+&emsp;&emsp;console.log(this.name);  
+}  
+sayName();  //window  
+sayName.apply(person);  //kxy  
+sayName.apply();  //window  
+
+当以函数调用模式调用sayName时，this代表window；当用apply模式调用sayName，并给它传入第一个参数person时，this被绑定到person对象上。如果不给apply传入任何参数，则this代表window。
