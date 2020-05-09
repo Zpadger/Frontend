@@ -1,13 +1,17 @@
 ## JS中的this对象详解 
 
 ### 一、方法调用模式  
-* 当函数被保存为一个对象的属性时，它就可成为这个对象的方法。当一个方法被调用时，this被绑定到这个对象上。如果调用表达式包含一个提取属性的动作(.或[])，那么被成为方法调用。例如：  
->a, b = map(int, input().split())  
-a, b, c = map(int, input().split())
+* 当函数被保存为一个对象的属性时，它就可称为这个对象的方法。当一个方法被调用时，this被绑定到这个对象上。如果调用表达式包含一个提取属性的动作(.或[])，那么被称为方法调用。例如：  
+>var name = "window";  
+var obj = {  
+&emsp;&emsp;name: "kxy",  
+&emsp;&emsp;sayName: function(){  
+&emsp;&emsp;&emsp;&emsp;console.log(this.name);  
+&emsp;&emsp;}  
+};  
+obj.sayName(); //kxy
 * 输入中包含'/'  
->a, b = map(int, input().split('/'))  
-* 输入中包含','  
->a, b = map(int, input().split(','))  
+
  
 
 ### 二、函数调用模式    
