@@ -10,7 +10,8 @@ var obj = {
 &emsp;&emsp;&emsp;&emsp;console.log(this.name);  
 &emsp;&emsp;}  
 };  
-obj.sayName();&emsp;&emsp;//kxy
+obj.sayName();&emsp;&emsp;//kxy  
+
 sayName函数作为对象obj的方法调用，所以函数体中的this就代表obj对象。  
 
  
@@ -77,6 +78,6 @@ person2.sayName();&emsp;&emsp;//window
 
 首先时刻提醒自己this是在函数执行时被绑定的，不要被赋值语句扰乱。  
 先看第一个执行语句：person1.sayName();这是方法调用模式，对象为person1，再看sayName被赋值为全局函数对象showName，在showName执行时，this绑定的
-是person1，所以结果是kxy。  
+是person1，所以结果是"kxy"。  
 
 再看第二个执行语句：person2.sayName(); 这还是方法调用模式，对象为person2，调用的是它的sayName方法。再看sayName函数体，发现函数体最终执行的函数是fun，fun是用函数调用模式调用的。而fun最终也被赋值为showName函数，因为fun是用函数调用模式调用的，所以这里的this绑定为window，结果为”window“。
