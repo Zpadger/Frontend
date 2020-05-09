@@ -10,7 +10,7 @@ var obj = {
 &emsp;&emsp;&emsp;&emsp;console.log(this.name);  
 &emsp;&emsp;}  
 };  
-obj.sayName();  //kxy
+obj.sayName();&emsp;&emsp;//kxy
 sayName函数作为对象obj的方法调用，所以函数体中的this就代表obj对象。  
 
  
@@ -34,7 +34,7 @@ sayName以函数调用模式调用，所以函数体重的this代表window对象
 >function Obj(){  
 &emsp;&emsp;this.name = "kxy";
 var person = new Obj();  
-console.log(person.name);  //kxy  
+console.log(person.name);&emsp;&emsp;//kxy  
 
 Obj作为构造函数被调用，函数体内的this被绑定为新创建的对象person。
 
@@ -49,9 +49,9 @@ var person = {
 function sayName(){  
 &emsp;&emsp;console.log(this.name);  
 }  
-sayName();  //window  
-sayName.apply(person);  //kxy  
-sayName.apply();  //window  
+sayName();&emsp;&emsp;//window  
+sayName.apply(person);&emsp;&emsp;//kxy  
+sayName.apply();&emsp;&emsp;//window  
 
 当以函数调用模式调用sayName时，this代表window；当用apply模式调用sayName，并给它传入第一个参数person时，this被绑定到person对象上。如果不给apply传入任何参数，则this代表window。
 
@@ -72,6 +72,11 @@ var person2 = {
 &emsp;&emsp;&emsp;&emsp;fun();  
 &emsp;&emsp;}  
 }  
-person1.sayName();  //kxy  
-person2.sayName();  //window  
+person1.sayName();&emsp;&emsp;//kxy  
+person2.sayName();&emsp;&emsp;//window  
 
+首先时刻提醒自己this是在函数执行时被绑定的，不要被赋值语句扰乱。  
+先看第一个执行语句：person1.sayName();这是方法调用模式，对象为person1，再看sayName被赋值为全局函数对象showName，在showName执行时，this绑定的
+是person1，所以结果是kxy。  
+
+再看第二个执行语句：person2.sayName(); 这还是方法调用模式，对象为person2，调用的是它的sayName方法。再看sayName函数体，发现函数体最终执行的函数是fun，fun是用函数调用模式调用的。而fun最终也被赋值为showName函数，因为fun是用函数调用模式调用的，所以这里的this绑定为window，结果为”window“。
