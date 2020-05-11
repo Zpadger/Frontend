@@ -5,7 +5,7 @@
 
 >function trimTag(tagName, htmlStr) {  
 &emsp;&emsp;let reg = new RegExp(`<${tagName}(\\s.*)*>(\\n|.)*<\\/${tagName}>`, "g")  
-return htmlStr.replace(reg,'')  
+&emsp;&emsp;return htmlStr.replace(reg,'')  
 } 
   
 
@@ -19,4 +19,17 @@ return htmlStr.replace(reg,'')
 }
 
 
- 
+* 去除字符串中的空格符。例如：  
+>function numCheck(str, specialNum) {  
+&emsp;&emsp;if(str.indexOf(',') > -1) {  
+&emsp;&emsp;&emsp;&emsp;return str.splite(',').every(item=>this.numCheck(item));  
+&emsp;&emsp;}else {  
+&emsp;&emsp;&emsp;&emsp;return str.split(specialNum).length === 2;  
+&emsp;&emsp;}  
+}
+
+
+
+
+
+
