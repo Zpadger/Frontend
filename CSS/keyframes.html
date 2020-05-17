@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Keyframes介绍</title>
+	<style>
+		div {
+			width: 100px;
+			height: 100px;
+			background: red;
+			color: #fff;
+			animation-name: wobble;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes wobble {
+			0% {
+				margin-left: 50px;
+				background: green;
+			}
+			33% {
+				margin-left: 100px;
+				background: orange;
+			}
+			66% {
+				margin-left: 150px;
+				background: blue;
+			}
+			100% {
+				margin-left: 200px;
+				background: red;
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+	
+	<p>在一个“@keyframes”中的样式规则可以由多个百分比构成的，如在“0%”到“100%”之间创建更多个百分比，分别给每个百分比中给需要有动画效果的元素加上不同的样式，从而达到一种在不断变化的效果。</p>
+	<p>经验与技巧：在@keyframes中定义动画名称时，其中0%和100%还可以使用关键词from和to来代表，其中0%对应的是from，100%对应的是to。</p>
+	<head>案例演示</head>
+	<div id="wobble"></div>
+	<p>
+	通过“@keyframes”声明一个名叫“wobble”的动画，从“0%”开始到“100%”结束，同时还经历了一个“40%”和“60%”两个过程。“wobble”动画在“0%”时元素定位到left为100px，背景色为green，然后在“40%”时元素过渡到left为150px,背景色为orange,接着在“60%”时元素过渡到left为75px，背景色为blue，最后“100%”时结束动画，元素又回到起点left为100px处，背景色变为red。</p>
+</body>
+</html>
