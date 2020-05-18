@@ -1,0 +1,23 @@
+.case4 {
+	text-align: center;
+
+	/*显示框*/
+	border: 1px solid steelblue;
+	width: 150px;
+	height: 120px;
+}
+.content {
+	display: inline-block;
+	vertical-align: middle;
+
+	/*显示框*/
+	width: 50px;
+	height: 40px;
+	border: 1px solid lightcoral;
+}
+.case4:after {
+	display: inline-block;
+	vertical-align: middle;
+	content: "";
+	height: 100%;
+}
