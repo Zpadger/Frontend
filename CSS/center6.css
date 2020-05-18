@@ -1,0 +1,17 @@
+.case6 {
+	display: table-cell;
+	vertical-align: middle;
+
+	/*显示框*/
+	border: 1px solid steelblue;
+	width: 150px;
+	height: 120px;
+}
+.content {
+	margin: 0 auto;
+
+	/*显示框*/
+	width: 50px;
+	height: 40px;
+	border: 1px solid lightcoral;
+}
