@@ -1,0 +1,16 @@
+.case2 {
+	position: relative;
+	border: 1px solid steelblue;
+	width: 150px;
+	height: 120px;
+}
+.content {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border: 1px solid saddlebrown;
+	/*为了显示框*/
+	width: 50px;
+	height: 40px;
+}
