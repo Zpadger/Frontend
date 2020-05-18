@@ -1,0 +1,11 @@
+.case5 {
+	display: flex;
+}
+.content {
+	margin: auto;
+
+	/*显示框*/
+	width: 50px;
+	height: 40px;
+	border: 1px solid lightcoral;
+}
