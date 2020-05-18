@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS绝对居中方法一</title>
+	<link rel="stylesheet" href="center1.css">
+	<style type="text/css"></style>
+</head>
+<body>
+	<p><b>Case1 通过计算定位</b></p>
+	<p>使用相对定位和偏移进行居中</p>
+	<p><b>前提条件</b></p>
+	<p>已知元素宽度、高度</p>
+	<p><b>思路</b></p>
+	<p>使用 position: relative；</p>
+	<p>将 left 和 top 都设置为 50%，此时元素已经向上和下各偏移了一半的距离；</p>
+	<p>使用 margin-left 和  margin-top，分别偏移元素宽度和高度的一半即可</p>
+	<div class="case1" >
+		<div class="content"></div>
+	</div>
+	
+</body>
+</html>
