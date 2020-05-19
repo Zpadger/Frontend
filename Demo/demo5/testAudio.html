@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>测试播放音乐</title>
+</head>
+<body>
+	<audio id="music" src="./file/Perfect.mp3" loop="loop">你的浏览器不支持播放音乐</audio>
+	<a href="javascript:playPause();">
+		<img src="./file/music_off.png" width="48" height="50" id="music_btn"  border="0">
+	</a>
+	
+	<script>
+		function playPause() {
+			var music = document.getElementById('music');
+			var music_btn = document.getElementById('music_btn');
+			if (music.paused) {
+				music.play();
+				music_btn.src = './file/music.gif';
+			}
+			else{
+				music.pause();
+				music_btn.src = 'pause.gif';
+			}
+		}
+	</script>
+</body>
+</html>
