@@ -8,14 +8,15 @@
 (function A() {
     console.log(A); // [Function A]
     A = 1;
-    console.log(window.A); // undefined
+    // console.log(window.A); // undefined
     console.log(A); // [Function A]
 }())
 ```
 
 答案是：  
 ```JavaScript
-[1, NaN, NaN]
+[Function: A]
+[Function: A]
 ```
 
 
