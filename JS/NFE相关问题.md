@@ -63,10 +63,14 @@ NFE相关特性：
     4.Let closure be the result of creating a new Function object as specified in 13.2 with parameters specified by           FormalParameterListopt and body specified by FunctionBody. Pass in funcEnv as the Scope. Pass in true as the Strict flag     if the FunctionExpression is contained in strict code or if its FunctionBody is strict code.  
     5.Call the InitializeImmutableBinding concrete method of envRec passing the String value of Identifier and closure as the arguments.  
     6.Return closure.
+ 
+注意步骤 3 和 5，分别调用了 createImmutableBinding 和 InitializeImmutableBinding 内部方法，创建的是不可更改的绑定。  
+要理解这两个特性，最重要的是搞清楚标识符<code>A</code>的绑定记录保存在哪里。让我们问自己几个问题：  
+1.标识符<code>A</code>与该 NFE 是什么关系？  
+两层关系：首先，该 NFE 的<code>name</code>属性是字符串<code>'A'</code>；更重要的是，<code>A</code>是该 NFE 的一个自由变量。在函数体内部，我们引用了<code>A</code>，**但<code>A</code>既不是该 NFE 的形参，又不是它的局部变量，那它不是自由变量是什么！**解析自由变量，要从函数的 [[scope]] 内部属性所保存的词法环境 (Lexical Environment) 中查找变量的绑定记录。
 
-
-**4.** 规约1  
-如果**parseInt**遇到了不属于**radix**参数所指定的基数中的字符那么该字符和其后的字符都将被忽略。接着返回已经解析的整数部分。**parseInt**将截取整数部分。开头和结尾的空白符允许存在，会被忽略。
+2.标识符<code>A</code>保存在全局执行环境（Global Execution Context）的词法环境(Lexical Environment)中吗？  
+答案是否。如果你仔细看过 ES5 Section 13 这一节，会发现创建 NFE 比创建 匿名函数表达式 （Anonymous Function Expression, AFE） 和 函数声明 (Function Declaration) 的过程要复杂得多.
 
 
 **5.** 规约2  
