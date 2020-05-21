@@ -41,16 +41,7 @@ ReferenceError: window is not defined
     at internal/main/run_main_module.js:17:47 
 ```
 
-
-#### string
-要被解析的值。如果参数不是一个字符串，则将其转换为字符串(使用  ToString 抽象操作)。字符串开头的空白符将会被忽略。
-
-
-#### radix
-一个介于2和36之间的整数(数学系统的基础)，表示上述字符串的**基数**。比如参数"10"表示使用我们通常使用的十进制数值系统。**始终指定此参数**可以消除阅读该代码时的困惑并且保证转换结果可预测。当未指定基数时，不同的实现会产生不同的结果，通常将值**默认为10**。
-
-
-**2.** map 函数等价于  
+**2.** 代码中<code>A = 1<code>试图改变  
 ```JavaScript
 ['1', '2', '3'].map((string, index) => return parseInt(string, index)) 
 ```
