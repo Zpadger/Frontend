@@ -67,10 +67,10 @@ NFE相关特性：
 注意步骤 3 和 5，分别调用了 createImmutableBinding 和 InitializeImmutableBinding 内部方法，创建的是不可更改的绑定。  
 要理解这两个特性，最重要的是搞清楚标识符<code>A</code>的绑定记录保存在哪里。让我们问自己几个问题：  
 1.标识符<code>A</code>与该 NFE 是什么关系？  
-两层关系：首先，该 NFE 的<code>name</code>属性是字符串<code>'A'</code>；更重要的是，<code>A</code>是该 NFE 的一个自由变量。在函数体内部，我们引用了<code>A</code>，**但<code>A</code>既不是该 NFE 的形参，又不是它的局部变量，那它不是自由变量是什么！**解析自由变量，要从函数的 [[scope]] 内部属性所保存的词法环境 (Lexical Environment) 中查找变量的绑定记录。
+两层关系：首先，该 NFE 的<code>name</code>属性是字符串<code>'A'</code>；更重要的是，<code>A</code>是该 NFE 的一个自由变量。在函数体内部，我们引用了<code>A</code>，**但<code>A</code>既不是该 NFE 的形参，又不是它的局部变量，那它不是自由变量是什么！** 解析自由变量，要从函数的 [[scope]] 内部属性所保存的词法环境 (Lexical Environment) 中查找变量的绑定记录。
 
 2.标识符<code>A</code>保存在全局执行环境（Global Execution Context）的词法环境(Lexical Environment)中吗？  
-答案是否。如果你仔细看过 ES5 Section 13 这一节，会发现创建 NFE 比创建 匿名函数表达式 （Anonymous Function Expression, AFE） 和 函数声明 (Function Declaration) 的过程要复杂得多.
+答案是否。如果你仔细看过 ES5 Section 13 这一节，会发现创建 NFE 比创建 匿名函数表达式 （Anonymous Function Expression, AFE） 和 函数声明 (Function Declaration) 的过程要复杂得多。
 
 
 **5.** 规约2  
