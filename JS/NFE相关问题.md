@@ -52,12 +52,20 @@ ReferenceError: window is not defined
 ```
 这是一个**立即执行函数表达式(Immediately-invoked function expression, IIFE)** ，更特殊的是，该函数是一个**具名函数表达式(Named function expression, NFE)** 。  
 NFE相关特性：  
-* 作为函数名的标识符（在这里是 A ）只能从函数体内部访问，在函数外部访问不到 (IE9+)。[ES5 Section13](http://ecma-international.org/ecma-262/5.1/#sec-13)特别提到了这一点：  
+* 作为函数名的标识符(在这里是<code>A</code>)只能从函数体内部访问，在函数外部访问不到(IE9+)。[ES5 Section13](http://ecma-international.org/ecma-262/5.1/#sec-13)特别提到了这一点：  
 >The Identifier in a FunctionExpression can be referenced from inside the FunctionExpression's FunctionBody to allow the function to call itself recursively. However, unlike in a FunctionDeclaration, the Identifier in a FunctionExpression cannot be referenced from and does not affect the scope enclosing the FunctionExpression.
+  
+* 绑定为函数名的标识符(这里是<code>A</code>)，不能再绑定为其他值，即该标识符绑定是不可更改的(immutable)，所以在NFE函数体内对<code>A</code>重新赋值是无效的。ES5 Section 13 详细描述了创建 NFE 的机制：  
+>The production FunctionExpression : function Identifier (
+FormalParameterListopt ) { FunctionBody }
+is evaluated as follows:
 
-
-**3.** 返回值  
-返回一个整数或NaN
+1.Let funcEnv be the result of calling NewDeclarativeEnvironment passing the running execution context’s Lexical Environment as the argument
+2.Let envRec be funcEnv’s environment record.
+3.Call the CreateImmutableBinding concrete method of envRec passing the String value of Identifier as the argument.
+4.Let closure be the result of creating a new Function object as specified in 13.2 with parameters specified by FormalParameterListopt and body specified by FunctionBody. Pass in funcEnv as the Scope. Pass in true as the Strict flag if the FunctionExpression is contained in strict code or if its FunctionBody is strict code.
+5.Call the InitializeImmutableBinding concrete method of envRec passing the String value of Identifier and closure as the arguments.
+6.Return closure.
 
 
 **4.** 规约1  
