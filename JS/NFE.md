@@ -21,10 +21,26 @@
 
 
 ### 知识点讲解
-**1.** parseInt语法  
+**1.** 首先说注释问题  
 ```JavaScript
-parseInt(string, radix); 
+// console.log(window.A); // undefined 
 ```
+node.js中不存在window这个全局变量，window是浏览器的规范，并非JS的规范，所以在node.js中当然不能使用。如果不注释掉，会运行报错：  
+```JavaScript
+    console.log(window.A);
+                ^
+
+ReferenceError: window is not defined
+    at A (/Users/zhangpeiji/WebstormProjects/JS/test.js:4:17)
+    at Object.<anonymous> (/Users/zhangpeiji/WebstormProjects/JS/test.js:6:2)
+    at Module._compile (internal/modules/cjs/loader.js:1185:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1205:10)
+    at Module.load (internal/modules/cjs/loader.js:1034:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:923:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)
+    at internal/main/run_main_module.js:17:47 
+```
+
 
 #### string
 要被解析的值。如果参数不是一个字符串，则将其转换为字符串(使用  ToString 抽象操作)。字符串开头的空白符将会被忽略。
