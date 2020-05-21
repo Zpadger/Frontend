@@ -57,12 +57,12 @@ NFE相关特性：
   
 * 绑定为函数名的标识符(这里是<code>A</code>)，不能再绑定为其他值，即该标识符绑定是不可更改的(immutable)，所以在NFE函数体内对<code>A</code>重新赋值是无效的。ES5 Section 13 详细描述了创建 NFE 的机制：  
 >The production FunctionExpression : function Identifier(FormalParameterListopt){ FunctionBody }is evaluated as follows:  
-    1.Let funcEnv be the result of calling NewDeclarativeEnvironment passing the running execution context’s Lexical           Environment as the argument.  
-    2.Let envRec be funcEnv’s environment record.  
-    3.Call the CreateImmutableBinding concrete method of envRec passing the String value of Identifier as the argument.  
-    4.Let closure be the result of creating a new Function object as specified in 13.2 with parameters specified by           FormalParameterListopt and body specified by FunctionBody. Pass in funcEnv as the Scope. Pass in true as the Strict flag     if the FunctionExpression is contained in strict code or if its FunctionBody is strict code.  
-    5.Call the InitializeImmutableBinding concrete method of envRec passing the String value of Identifier and closure as the arguments.  
-    6.Return closure.
+    (1)Let funcEnv be the result of calling NewDeclarativeEnvironment passing the running execution context’s Lexical           Environment as the argument.  
+    (2)Let envRec be funcEnv’s environment record.  
+    (3)Call the CreateImmutableBinding concrete method of envRec passing the String value of Identifier as the argument.  
+    (4)Let closure be the result of creating a new Function object as specified in 13.2 with parameters specified by           FormalParameterListopt and body specified by FunctionBody. Pass in funcEnv as the Scope. Pass in true as the Strict flag     if the FunctionExpression is contained in strict code or if its FunctionBody is strict code.  
+    (5)Call the InitializeImmutableBinding concrete method of envRec passing the String value of Identifier and closure as the arguments.  
+    (6)Return closure.
  
 注意步骤 3 和 5，分别调用了 createImmutableBinding 和 InitializeImmutableBinding 内部方法，创建的是不可更改的绑定。  
 要理解这两个特性，最重要的是搞清楚标识符<code>A</code>的绑定记录保存在哪里。让我们问自己几个问题：  
@@ -70,7 +70,19 @@ NFE相关特性：
 两层关系：首先，该 NFE 的<code>name</code>属性是字符串<code>'A'</code>；更重要的是，<code>A</code>是该 NFE 的一个自由变量。在函数体内部，我们引用了<code>A</code>，**但<code>A</code>既不是该 NFE 的形参，又不是它的局部变量，那它不是自由变量是什么！** 解析自由变量，要从函数的 [[scope]] 内部属性所保存的词法环境 (Lexical Environment) 中查找变量的绑定记录。
 
 2.标识符<code>A</code>保存在全局执行环境（Global Execution Context）的词法环境(Lexical Environment)中吗？  
-答案是否。如果你仔细看过 ES5 Section 13 这一节，会发现创建 NFE 比创建 匿名函数表达式 （Anonymous Function Expression, AFE） 和 函数声明 (Function Declaration) 的过程要复杂得多。
+答案是否。如果你仔细看过 ES5 Section 13 这一节，会发现创建 NFE 比创建 匿名函数表达式 （Anonymous Function Expression, AFE） 和 函数声明 (Function Declaration) 的过程要复杂得多。  
+
+那为什么创建 NFE 要搞得那么复杂呢？就是为了**实现 NFE 的只能从函数内部访问<code>A</code>，而不能从外部访问这一特性！**  
+创建 NFE 时，创建了一个专门的词法环境用于保存<code>A</code>的绑定记录(见上面步骤 1~3)！对于 NFE, 有如下关系：  
+```Javascript
+A.[[scope]] --->  Lexical Environment {'environment record': {A: function ...}, outer: --}----> Lexical Environment of Global Context {'environment record': {...}, outer --}---> null
+```  
+
+可见，<code>A</code>的绑定记录不在全局执行上下文的词法环境中，故不能从外部访问！
+
+如果简单理解的话：  
+**NFE其实就简单两条规则：1.只能在函数体内访问，2.函数名变量可以理解为常量，不可变。**  
+假如函数内部声明了同名变量A，或者提供了形参A，又或者内部声明一个函数A，局部变量或局部函数会遮蔽 (shadow) 自由变量。请看例子如下所示：  
 
 
 **5.** 规约2  
