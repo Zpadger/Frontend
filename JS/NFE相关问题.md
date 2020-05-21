@@ -52,7 +52,8 @@ ReferenceError: window is not defined
 ```
 这是一个**立即执行函数表达式(Immediately-invoked function expression, IIFE)** ，更特殊的是，该函数是一个**具名函数表达式(Named function expression, NFE)** 。  
 NFE相关特性：  
-* 作为函数名的标识符（在这里是 A ）只能从函数体内部访问，在函数外部访问不到 (IE9+)。[ES5 Section13](http://ecma-international.org/ecma-262/5.1/#sec-13)特别提到了这一点。
+* 作为函数名的标识符（在这里是 A ）只能从函数体内部访问，在函数外部访问不到 (IE9+)。[ES5 Section13](http://ecma-international.org/ecma-262/5.1/#sec-13)特别提到了这一点：  
+>The Identifier in a FunctionExpression can be referenced from inside the FunctionExpression's FunctionBody to allow the function to call itself recursively. However, unlike in a FunctionDeclaration, the Identifier in a FunctionExpression cannot be referenced from and does not affect the scope enclosing the FunctionExpression.
 
 
 **3.** 返回值  
