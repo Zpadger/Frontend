@@ -41,7 +41,7 @@ ReferenceError: window is not defined
     at internal/main/run_main_module.js:17:47 
 ```
 
-**2.** 代码中<code>A = 1<code>试图改变  
+**2.** 代码中<code>A = 1</code>试图改变自由变量<code>A</code>的值，但是没有生效！  
 ```JavaScript
 ['1', '2', '3'].map((string, index) => return parseInt(string, index)) 
 ```
