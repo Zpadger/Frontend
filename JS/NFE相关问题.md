@@ -57,11 +57,11 @@ NFE相关特性：
   
 * 绑定为函数名的标识符(这里是<code>A</code>)，不能再绑定为其他值，即该标识符绑定是不可更改的(immutable)，所以在NFE函数体内对<code>A</code>重新赋值是无效的。ES5 Section 13 详细描述了创建 NFE 的机制：  
 >The production FunctionExpression : function Identifier(FormalParameterListopt){ FunctionBody }is evaluated as follows:  
-    1.Let funcEnv be the result of calling NewDeclarativeEnvironment passing the running execution context’s Lexical                Environment as the argument.  
+    1.Let funcEnv be the result of calling NewDeclarativeEnvironment passing the running execution context’s Lexical           Environment as the argument.  
     2.Let envRec be funcEnv’s environment record.  
     3.Call the CreateImmutableBinding concrete method of envRec passing the String value of Identifier as the argument.  
-    4.Let closure be the result of creating a new Function object as specified in 13.2 with parameters specified by                FormalParameterListopt and body specified by FunctionBody. Pass in funcEnv as the Scope. Pass in true as the Strict flag      if the FunctionExpression is contained in strict code or if its FunctionBody is strict code.  
-    5.Call the InitializeImmutableBinding concrete method of envRec passing the String value of Identifier and closure as the      arguments.  
+    4.Let closure be the result of creating a new Function object as specified in 13.2 with parameters specified by           FormalParameterListopt and body specified by FunctionBody. Pass in funcEnv as the Scope. Pass in true as the Strict flag     if the FunctionExpression is contained in strict code or if its FunctionBody is strict code.  
+    5.Call the InitializeImmutableBinding concrete method of envRec passing the String value of Identifier and closure as the arguments.  
     6.Return closure.
 
 
