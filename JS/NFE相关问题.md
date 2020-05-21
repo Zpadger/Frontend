@@ -43,8 +43,16 @@ ReferenceError: window is not defined
 
 **2.** 代码中<code>A = 1</code>试图改变自由变量<code>A</code>的值，但是没有生效！  
 ```JavaScript
-['1', '2', '3'].map((string, index) => return parseInt(string, index)) 
+(function A() {
+    console.log(A); // [Function A]
+    A = 1;
+    console.log(window.A); // undefined
+    console.log(A); // [Function A]
+}()) 
 ```
+这是一个**立即执行函数表达式(Immediately-invoked function expression, IIFE)** ，更特殊的是，该函数是一个**具名函数表达式(Named function expression, NFE)** 。  
+NFE相关特性：  
+* 作为函数名的标识符（在这里是 A ）只能从函数体内部访问，在函数外部访问不到 (IE9+)。[ES5 Section13](http://ecma-international.org/ecma-262/5.1/#sec-13)特别提到了这一点。
 
 
 **3.** 返回值  
