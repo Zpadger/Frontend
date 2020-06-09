@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内容过滤</title>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div>John Resig</div>
+    <div>gggg Resig</div>
+    <div>Malcom John Sinclair</div>
+    <div>J.Ohn</div>
+    <script>
+        $(function () {
+            $("div:contains('John')").css("text-decoration","underline");
+        })
+    </script>
+</body>
+</html>
