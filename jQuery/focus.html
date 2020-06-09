@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>:focus 选择获取当前焦点的元素</title>
+    <style>
+        .focused{
+            background-color: #abcdef;
+        }
+    </style>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div id="content">
+        <input tabindex="1">
+        <input tabindex="2">
+        <select tabindex="3">
+            <option>select menu</option>
+        </select>
+        <div tabindex="4">
+            a div
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $("#content").delegate("*","focus blur",function (event) {
+                var e = $(this); //生成e指向当前对象
+                setTimeout(function () {
+                    e.toggleClass("focused",e.is(":focus")); //当它获取到焦点的时候
+                },0)
+            }); //给指定的元素添加一个或多个事件
+        })
+    </script>
+</body>
+</html>
