@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基础选择器</title>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div>
+        <span class="s"></span>
+        <p id="p"></p>
+        <label></label>
+        <a>haha</a>
+        <b>2333</b>
+    </div>
+    <script>
+        $(function () { //ready简写
+            // $("div *").html("我们是一家人");//选择div下所有元素
+            // $(".s").html("我们是一家人");
+            // $("span").html("我们是一家人");
+            $("#p,span,label").html("我们是一家人");
+        })
+    </script>
+</body>
+</html>
