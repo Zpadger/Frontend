@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<!--<a href="#" hreflang="en">英文</a>-->
+<!--<a href="#" hreflang="zh">中文</a>-->
+<input name="man-news" id="man-news"/>
+<input name="milk man"/>
+<input id="littleman" name="new-littleman"/>
+<input name="newmilk"/>
+<script>
+    // $(function () {
+    //     $("[hreflang=en]").css("color","red");
+    // })  //选择指定属性值：等于给定字符串或以该字符串为前缀的元素
+    // $(function () {
+    //     $("input[name~='man']").val('mr.man is in it!');
+    // }) //选择指定属性值：用空格分隔的值中包含一个给定值的元素
+    //查找具有id属性 且name属性时以man结尾的输入框并赋值
+    $(function () {
+        $("input[id][name$='man']").val("only this one");
+    })
+</script>
+
+</body>
+</html>
