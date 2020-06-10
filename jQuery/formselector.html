@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <style>
+        textarea{
+            height: 35px;
+        }
+        div{
+            color: red;
+        }
+        fieldset{
+            margin: 0;
+            padding: 0;
+            border-width: 0;
+        }
+        .marked{
+            background-color: yellow;
+            border: 3px solid red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <filedset>
+            <input type="button" value="Input Button"/>
+            <input type="checkbox"/>
+            <input type="file">
+            <input type="hidden">
+            <input type="image">
+            <input type="password">
+            <input type="radio">
+            <input type="reset">
+            <input type="submit">
+            <input type="text">
+            <select><option>Option</option></select>
+            <textarea></textarea>
+            <button>Button</button>
+        </filedset>
+    </form>
+<div></div>
+    <script>
+        $(function () {
+            // var input = $(":button").addClass("marked"); //选择所有按钮元素和类型为按钮的元素
+            // var input = $(":input:image").addClass("marked"); //选择所有图像类型元素
+            var input = $(":input").addClass("marked");
+        })
+    </script>
+</body>
+</html>
