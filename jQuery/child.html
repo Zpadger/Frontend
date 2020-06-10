@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>子元素选择器</title>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<ul class="topnav">
+    <li>li1</li>
+    <li>li2
+        <ul>
+            <li>next li1</li>
+            <li>next li2</li>
+            <li>next li3</li>
+        </ul>
+    </li>
+    <li>li3</li>
+</ul>
+<script>
+    $(function () {
+        // $(".topnav>li").css("border","1px solid red"); //子元素选择器
+        // $(".topnav li").css("border","1px solid red"); //后代选择器
+        $("li + li").css("border","1px solid red"); //相邻选择器
+    })
+</script>
+</body>
+</html>
