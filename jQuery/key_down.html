@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>键盘事件</title>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<script>
+    // $(document).keydown(function (event) {
+    //     alert(event.keyCode); //显示键盘代码
+    // })
+    $(document).keydown(function (event) {
+        alert("keydown");
+    })
+    $(document).keypress(function (event) {
+        alert("keypress");
+    })
+    $(document).keyup(function (event) {
+        alert("keyup");
+    }) //优先级按照顺序
+</script>
+</body>
+</html>
