@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实现鼠标点击事件</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <style>
+        p{
+            width: 300px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <p>haha 1</p>
+    <p>haha 2</p>
+    <p>haha 3</p>
+    <p>haha 4</p>
+<!--    <script>-->
+<!--        // 原生js实现鼠标点击事件-->
+<!--        var p = document.getElementsByTagName("p"); //返回一个数组-->
+<!--        for (var i = 0;i < p.length; i++){-->
+<!--            p[i].onclick = function () {-->
+<!--                alert(this.innerHTML);-->
+<!--            }-->
+<!--        }-->
+<!--    </script>-->
+    <script>
+        // 采用jQuery实现
+        $(function () {
+            $("P").click(function () {
+                alert($(this).html());
+            })
+        })
+    </script>
+    <!--.click() 点击事件-->
+    <!--.dblclick() 双击事件-->
+    <!--.hover() 鼠标悬停和离开-->
+    <!--.mousedown() 鼠标按下-->
+    <!--.mouseenter() 鼠标进入元素-->
+    <!--.mouseleave() 鼠标离开元素-->
+    <!--.mousemove() 鼠标在元素内容移动-->
+    <!--.mouseout() 鼠标离开元素 支持事件冒泡-->
+    <!--.mouseover() 鼠标进入元素内 支持事件冒泡-->
+    <!--.mouseup() 鼠标按键释放-->
+</body>
+</html>
