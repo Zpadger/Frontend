@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>on事件</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <style>
+        p{
+            width: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">button</button>
+    <ul>
+        <li>li 1</li>
+        <li>li 2</li>
+        <li>li 3</li>
+        <li>li 4</li>
+    </ul>
+    <div>
+        <p>haha</p>
+    </div>
+
+    <script>
+        $(function () {
+            // $("#btn").on("click",function () {
+            //     alert("haha");
+            // })
+            // $("ul").on("click","li",function () {
+            //     alert($(this).html());
+            // })
+            // $("p").on("mouseover mouseout",function () {
+            //     alert("haha");
+            // })
+            var fn = function () {
+                alert("haha");
+            }
+            $("div").on("click mouseover","p",fn);
+            // 移除
+            $("div").off("mouseover","p",fn); // 不指明的话全部移除
+        })
+    </script>
+</body>
+</html>
