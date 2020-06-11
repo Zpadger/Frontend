@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>delegate</title>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<ul>
+    <li>li 1</li>
+    <li>li 2</li>
+    <li>li 3</li>
+    <li>li 4</li>
+</ul>
+<script>
+    $(function () {
+        $("ul").delegate("li","click",function () { // 事件委托 现在用on代替
+            alert($(this).html());
+        })
+    })
+</script>
+</body>
+</html>
