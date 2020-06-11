@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浏览器事件scroll</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <style>
+        /*p{*/
+        /*    width: 100%;*/
+        /*    height: 2000px;*/
+        /*}*/
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+<!--    <p>hahaha</p>-->
+<!--    <script>-->
+<!--        $(window).scroll(function () {-->
+<!--            alert("哈哈哈");-->
+<!--        })-->
+<!--    </script>-->
+    <div id="d1">啊哈哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或</div>
+    <script>
+        $(function () {
+            $("#d1").scroll(function () {
+                alert("ccccc");
+            })
+        })
+    </script>
+</body>
+</html>
