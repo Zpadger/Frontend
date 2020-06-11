@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>preventDefault</title>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<a href="https://www.baidu.com">baidu</a>
+<script>
+    $(function () {
+        $("a").click(function (e) {
+            e.preventDefault();
+            alert("已阻止跳转");
+        })
+    })
+</script>
+</body>
+</html>
