@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>one事件</title>
+<!--    常用于引导页 只执行一次-->
+    <script src="jquery-3.5.1.min.js"></script>
+    <style>
+        p{
+            width: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>haha</p>
+    <script>
+        $(function () {
+            $("p").one("click",function () {
+                alert("haha");
+            })
+        })
+    </script>
+</body>
+</html>
