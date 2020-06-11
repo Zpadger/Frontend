@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM属性remove</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <style>
+        p{
+            width: 100px;
+            height: 50px;
+            background-color: darkgreen;
+            border-radius: 5px;
+            line-height: 50px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .pc{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+<p>button</p>
+<input type="text" value="some text"/>
+<a class="a1">haha</a>
+<input type="checkbox" value="xuanze"/>
+<script>
+    $(function () {
+        $("a").attr("href","https://www.baidu.com");
+        $("a").removeAttr("href"); // 移除属性
+        $("input").removeAttr("type");
+        $("A").removeClass("a1"); // 移除类
+
+    })
+    $(function () {
+        $("p").on("mouseover mouseout",function () {
+            $(this).toggleClass("pc"); // 如果存在（不存在）就删除（添加）一个类
+        })
+        console.log($("input").val());
+    })
+</script>
+</body>
+</html>

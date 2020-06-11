@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM属性attr</title>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <a>haha</a>
+    <p name="haha">哈哈</p>
+    <div></div>
+    <h1 class="h11"></h1>
+    <script>
+        $(function () {
+            $("a").attr("href","https://www.baidu.com"); // 添加属性和属性值
+            var name = $("p").attr("name"); // haha
+            $("div").text(name);
+            // 获取匹配元素集合中的第一个元素属性值 设置每一个匹配元素的一个或多个属性
+            console.log($("h1").hasClass("h11")); // 确定任何一个匹配元素是否有被分配给定的类
+            console.log($("a").html());
+            $("a").html("hehe");
+        })
+    </script>
+</body>
+</html>

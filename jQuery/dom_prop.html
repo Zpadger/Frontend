@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM属性prop</title>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<input type="text" value="xuanze"/>
+<script>
+    $(function () {
+        console.log($("input").prop("value","haha")); // 只能获取已有默认属性
+
+    })
+</script>
+</body>
+</html>
