@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绑定事件处理器bind</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <style>
+        p{
+            width: 100px;
+            height: 50px;
+            background-color: darkgreen;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 50px;
+            margin: 0 auto;
+            color: #ffffff;
+            font-size: 20px;
+        }
+        .pbtn{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <p>按钮</p>
+    <script>
+        $(function () {
+            // $("p").bind({
+            //     mouseover:function () {
+            //         $(this).addClass("pbtn");
+            //     },
+            //     mouseout:function () {
+            //         $(this).removeClass("pbtn");
+            //     }
+            // })
+            $("p").bind("mouseover mouseout",function () {
+                $(this).toggleClass("pbtn"); // 匹配到的样式类是否存在 添加或删除
+            })
+        })
+    </script>
+</body>
+</html>

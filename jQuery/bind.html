@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绑定事件处理器bind</title>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <button id="btn">按钮</button>
+    <script>
+        $(function () {
+            // $("#btn").bind("click",function () { //不推荐使用
+            //     alert("haha");
+            // })
+            // 两种方法不覆盖
+            $("#btn").bind({
+                click:function () {
+                    alert("click");
+                },
+                mouseover:function () {
+                    alert("mouseover");
+                }
+            })
+        })
+        // 目前采用on方法
+    </script>
+</body>
+</html>
