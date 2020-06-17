@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM插入并包裹元素</title>
+    <!--通过网络CDN引入-->
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <style>
+        .container{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<!--    <div class="d1">-->
+<!--        <div class="d2">-->
+<!--            <p>哈哈</p>-->
+<!--        </div>-->
+<!--    </div>-->
+
+    <p>哈哈</p>
+    <p>哈哈</p>
+<script>
+    // console.log($);
+    $(document).ready(function () {
+        // $("p").wrap("<div></div>"); // 在每个匹配的元素外包裹一个HTML元素
+        // $("p").unwrap(); // 删除外层元素
+        $("p").wrapAll("<div class='container'></div>"); // 匹配元素外包一层结构
+        $("p").wrapInner("<div class='inner'></div>"); // 匹配元素内包一层结构
+    })
+</script>
+
+</body>
+</html>
