@@ -6,11 +6,18 @@
     <script src="jquery-3.5.1.min.js"></script>
 </head>
 <body>
+    <span>我是span</span>
     <p>haha</p>
     <p>haha</p>
     <script>
         $(document).ready(function () {
-            $("p").append("<p>hehe</p>");
+            // $("p").append("<p>hehe</p>");
+            // $("p").append($("span"));
+            // $("<p>111</p>").appendTo($("p"));
+            // console.log($("span").html());
+            $("span").html("haha");
+            // $("p").prepend("<div>23333</div>");
+            $("<div>666</div>").prependTo($("p"));
         })
     </script>
 </body>
