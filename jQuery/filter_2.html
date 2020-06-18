@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <style>
+        div{
+            width: 50px;
+            height: 50px;
+            background-color: aquamarine;
+            float: left;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>li 1</li>
+        <li>li 2</li>
+        <li>li 3</li>
+        <li>li 4</li>
+    </ul>
+
+<!--    <div></div>-->
+<!--    <div class="middle"></div>-->
+<!--    <div class="middle"></div>-->
+<!--    <div class="middle"></div>-->
+<!--    <div></div>-->
+
+<!--    <ul>-->
+<!--        <li>li 1</li>-->
+<!--        <li>li 2</li>-->
+<!--        <li>-->
+<!--            <strong>s1</strong>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <strong>s2</strong>-->
+<!--            <strong>s3</strong>-->
+<!--        </li>-->
+<!--        <li>li 3</li>-->
+<!--    </ul>-->
+<!--<ul>-->
+<!--    <li>list <strong>item 1</strong></li>-->
+<!--    <li><span>list item 2</span></li>-->
+<!--    <li>list item 3</li>-->
+<!--</ul>-->
+    <div class="d1">d1</div>
+    <div class="d2">d2</div>
+    <div class="d3">d3</div>
+    <div class="d4">d4</div>
+<script>
+    $(function () {
+       // $("li").not(":odd").css("background-color","yellow"); // 不是奇数的
+
+        //  map
+       //  $("div").map(function () {
+       //      console.log(this.id);
+       //  })
+       //  var arr = [0,1,2];
+       //  console.log(arr.map(function (n) {
+       //      return n + 4;
+       //  }))
+
+        // slice
+        $("li").slice(1,3).css("background-color","pink");
+        // start 起始下标 0
+        // end 终止下标 包含首不包含尾
+
+    })
+</script>
+</body>
+</html>
