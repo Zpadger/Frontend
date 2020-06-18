@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM深度拷贝</title>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <p>haha</p>
+    <p>haha</p>
+    <p>haah</p>
+    <span>我是span</span>
+    <script>
+        $(function () {
+            // $("span").clone().appendTo($("p"));
+            // $("p").after("<span>111</span>");
+            // $("<span>222</span>").insertAfter($("p"));
+            // $("p").before("<span>span</span>");
+            $("<span>111</span>").insertBefore($("p"));
+        })
+    </script>
+
+</body>
+</html>
