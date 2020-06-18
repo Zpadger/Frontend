@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>树遍历next</title>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <ul class="one">
+        <li>li 1</li>
+        <li class="two">li 2
+            <ul class="three">
+                <li>item 1</li>
+                <li class="inner">item 2</li>
+                <li>item 3</li>
+            </ul>
+        </li>
+        <li>li 3</li>
+        <li>li 3</li>
+        <li>li 3</li>
+        <li>li 3</li>
+        <div>d1</div>
+        <div>d1</div>
+        <div>d1</div>
+        <div>d1</div>
+        <div>d1</div>
+    </ul>
+
+
+<!--    <p>p1</p>-->
+<!--    <p class="one">p2</p>-->
+<!--    <p>p3</p>-->
+<!--    <div>d1</div>-->
+
+    <dl>
+        <dt id="term-1">d1</dt>
+        <dd>1a</dd>
+        <dd>1b</dd>
+
+        <dt id="term-2">d2</dt>
+        <dd>2a</dd>
+        <dd>2b</dd>
+
+        <dt id="term-3">d3</dt>
+        <dd>3a</dd>
+        <dd>3b</dd>
+    </dl>
+<!--    nextUntil() 1个参数 2个参数-->
+<script>
+    $(function () {
+        // $(".one").next().css("background-color","yellow");
+        // $("p").next("div").css("background-color","yellow"); // 匹配元素集合紧邻后面同辈元素
+
+        // $(".two").nextAll().css("background-color","pink"); // 所有同辈元素
+        // $("li").nextAll("div").css("background-color","pink"); // 参数
+
+        // 一个参数
+        // $("#term-2").nextUntil("dt").css("background-color","red"); // 从哪里停止匹配 及不含头也不含尾
+
+        // 两个参数
+        var term3 = $("#term-3");
+        $("#term-1").nextUntil(term3,"dd").css("color","green");
+    })
+</script>
+</body>
+</html>
