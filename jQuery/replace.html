@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM替换</title>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <p>哈哈</p>
+        <p>哈哈</p>
+        <p>哈哈</p>
+        <p>哈哈</p>
+    </div>
+    <script>
+        $(function () {
+            $("<span>2333</span>").replaceAll($("p"));
+
+        })
+    </script>
+
+</body>
+</html>
