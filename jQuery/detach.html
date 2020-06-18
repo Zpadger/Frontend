@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM移除</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <style>
+        .container{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div>
+                <p class="p1">哈哈哈</p>
+            </div>
+        </div>
+        <p>哈哈哈</p>
+        <p>哈哈哈</p>
+        <p>哈哈哈</p>
+        <p>哈哈哈</p>
+    </div>
+
+    <script>
+        $(function () {
+            // $("p").detach(".p1"); // 遍历DOM中 去除掉所有匹配元素
+            $(".container").empty(); //移除集合中匹配元素的所有子结点
+        })
+    </script>
+</body>
+</html>
