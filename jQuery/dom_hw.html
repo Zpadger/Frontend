@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM宽度和高度</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <style>
+        div{
+            width: 100px;
+            height: 200px;
+            padding: 100px;
+            margin: 100px;
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div>我是一个div</div>
+    <script>
+        $(function () {
+            var div = $("div");
+            console.log(div.height());
+            console.log(div.width());
+        })
+    </script>
+</body>
+</html>
