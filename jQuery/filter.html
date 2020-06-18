@@ -15,12 +15,12 @@
     </style>
 </head>
 <body>
-<!--<ul>-->
-<!--    <li>li 1</li>-->
-<!--    <li>li 2</li>-->
-<!--    <li>li 3</li>-->
-<!--    <li>li 4</li>-->
-<!--</ul>-->
+<!--    <ul>-->
+<!--        <li>li 1</li>-->
+<!--        <li>li 2</li>-->
+<!--        <li>li 3</li>-->
+<!--        <li>li 4</li>-->
+<!--    </ul>-->
 
 <!--    <div></div>-->
 <!--    <div class="middle"></div>-->
@@ -28,23 +28,41 @@
 <!--    <div class="middle"></div>-->
 <!--    <div></div>-->
 
-    <ul>
-        <li>
-            <strong>s1</strong>
-        </li>
-        <li>
-            <strong>s2</strong>
-            <strong>s3</strong>
-        </li>
-    </ul>
+<!--    <ul>-->
+<!--        <li>li 1</li>-->
+<!--        <li>li 2</li>-->
+<!--        <li>-->
+<!--            <strong>s1</strong>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <strong>s2</strong>-->
+<!--            <strong>s3</strong>-->
+<!--        </li>-->
+<!--        <li>li 3</li>-->
+<!--    </ul>-->
+<ul>
+    <li>list <strong>item 1</strong></li>
+    <li><span>list item 2</span></li>
+    <li>list item 3</li>
+</ul>
 <script>
     $(function () {
         // $("li").eq(-1).css("background-color","red"); // 定位一个元素
         // $("li").filter(":even").css("background-color","red"); // 偶数 odd是奇数
         // $("div").filter(".middle").css("border","1px solid red"); // 多个元素
-        $("li").filter(function () {
-            return $("strong",this).length == 1
-        }).css("background-color","yellow"); // 只选择了一个strong标签的元素
+        // $("li").filter(function () {
+        //     return $("strong",this).length == 1
+        // }).css("background-color","yellow"); // 只选择了一个strong标签的元素
+        // $("li").first().css("background-color","red"); // first不接受任何参数
+        // $("li").last().css("background-color","red"); // last不接受任何参数
+        // $("li").has("strong").css("border","1px solid red");
+
+        $("ul").click(function (event) {
+            var target = $(event.target);
+            if (target.is("li")){
+                target.css("background-color","yellow");
+            }
+        })
     })
 </script>
 </body>
