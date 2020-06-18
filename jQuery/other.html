@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>其它遍历</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <style>
+        div,p{
+            width: 100px;
+            height: 100px;
+            /*float: left;*/
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<!--    <div></div>-->
+<!--    <div></div>-->
+<!--    <div></div>-->
+<!--    <div></div>-->
+<!--    <div></div>-->
+<!--    <p>addaddadd</p>-->
+<!--    <p>hello <a href="#">John</a>,how are you?</p>-->
+    <ul>
+        <li class="foo">li 1</li>
+        <li>li 2</li>
+        <li class="bar">li 3</li>
+    </ul>
+    <script>
+        $(function () {
+            // $("div").add("p").css("background-color","red");
+            // $("div").css("background-color","yellow").add("p").css("border","1px solid green");
+            // $("p").contents().filter(function () {
+            //     return this.nodeType != 1; // 元素节点 1  属性节点 2 文本节点 3
+            // }).wrap("<b/>");
+
+            $("ul").find(".foo").css("background-color","yellow").end().find(".bar").css("background-color","red");
+            // 找到foo之后 end返回ul标签继续找
+            // 终止在当前链的最新过滤操作 并返回匹配的元素以前的状态
+        })
+    </script>
+</body>
+</html>
