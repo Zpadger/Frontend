@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>树遍历children</title>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <ul>
+        <li>li 1</li>
+        <li class="selected">li 2</li>
+        <li>li 3</li>
+    </ul>
+    <script>
+        $(function () {
+            // $("ul").children().css("border","1px solid red"); // 遍历ul标签下每个元素的直接子元素
+            $("ul").children(".selected").css("border","1px solid red");
+
+        })
+    </script>
+</body>
+</html>

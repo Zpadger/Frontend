@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>树遍历closest</title>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <ul class="one">
+        <li>li 1</li>
+        <li class="two">li 2
+            <ul class="three">
+                <li>item 1</li>
+                <li class="inner">item 2</li>
+                <li>item 3/li>
+            </ul>
+        </li>
+        <li>li 3</li>
+    </ul>
+<script>
+    $(function () {
+       console.log($(".inner").closest("ul")); // 从元素本身开始 逐级向上级元素匹配
+    })
+</script>
+</body>
+</html>
