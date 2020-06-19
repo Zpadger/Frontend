@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>特效 滑动</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <style>
+        #content{
+            padding: 50px;
+            display: none;
+        }
+        #flipshow,#content,#fliphide,#fliptoggle{
+            padding: 5px;
+            text-align: center;
+            background-color: aquamarine;
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div id="flipshow">点击显示</div>
+    <div id="fliphide">点击隐藏</div>
+    <div id="fliptoggle">点击显示/隐藏</div>
+    <div id="content">hello world</div>
+    <script>
+        $(function () {
+            $("#flipshow").click(function () {
+                $("#content").slideDown(1000);
+            })
+
+            $("#fliphide").click(function () {
+                $("#content").slideUp(1000);
+            })
+
+            $("#fliptoggle").click(function () {
+                $("#content").slideToggle(1000);
+            })
+        })
+    </script>
+</body>
+</html>

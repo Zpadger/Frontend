@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>特效 淡入淡出</title>
+    <script src="jquery-3.5.1.min.js"></script>
+
+</head>
+<body>
+    <div id="div1" style="width: 80px;height: 80px;display:none;background-color: aquamarine"></div>
+    <div id="div2" style="width: 80px;height: 80px;display:none;background-color: palegreen"></div>
+    <div id="div3" style="width: 80px;height: 80px;display:none;background-color: palevioletred"></div>
+
+    <button id="in">fade in</button>
+    <button id="out">fade out</button>
+    <button id="toggle">fade toggle</button>
+    <button id="to">fade to</button>
+    <script>
+        $(function () {
+            $("#in").on("click",function () {
+                $("#div1").fadeIn(1000);
+                $("#div2").fadeIn(1000);
+                $("#div3").fadeIn(1000);
+            })
+
+            $("#out").on("click",function () {
+                $("#div1").fadeOut(1000);
+                $("#div2").fadeOut(1000);
+                $("#div3").fadeOut(1000);
+            })
+
+            $("#toggle").on("click",function () {
+                $("#div1").fadeToggle(1000);
+                $("#div2").fadeToggle(1000);
+                $("#div3").fadeToggle(1000);
+            })
+
+            $("#to").on("click",function () {
+                $("#div1").fadeTo(1000,0.5);
+                $("#div2").fadeTo(1000,0);
+                $("#div3").fadeTo(1000,);
+            })
+
+        })
+    </script>
+</body>
+</html>
