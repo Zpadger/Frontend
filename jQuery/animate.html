@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>特效 自定义</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <script>
+        $(function () {
+            $("div").click(function () {
+                $(this).animate({
+                    opacity:0.2,width: [400,"swing"],left:100
+                },"2000","swing",function () {
+                    alert("动画执行完毕");
+                })
+                $(this).animate({
+                    opacity:1,
+                    width:200,
+                    left:8
+                },2000,"linear",function () {
+                    alert("动画执行完毕");
+                })
+            })
+        })
+    </script>
+
+</body>
+</html>

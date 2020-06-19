@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>特效 自定义</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            position: absolute;
+        }
+        button{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <button>停止动画</button>
+    <script>
+        $(function () {
+            var div = $("div");
+            div.click(function () {
+                $(this).animate({
+                    width:"500px",opacity:0.2,left:200
+                },4000,"linear").delay(5000);
+                $(this).animate({
+                    width:200,opacity:1,left:8
+                },4000,"swing",function () {
+                    alert("动画执行完毕");
+                })
+            });
+            $("button").click(function () {
+                // div.clearQueue(); // 从列队移除所有未执行的项
+
+                // div.finish(); // 停止当前正在运行动画 删除所有排队动画 并完成匹配元素所有动画
+
+                div.stop(); // 停止匹配元素当前正在运行的动画
+            })
+        })
+    </script>
+</body>
+</html>
