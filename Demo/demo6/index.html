@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>幽灵按钮</title>
+    <link rel="stylesheet" href="app.css" type="text/css">
+</head>
+<body>
+    <div class="box">
+        <div class="link link-miss">
+            <span class="icon"></span>
+            <a href="#" class="button" data-text="My mission is clear">
+                <span class="line line-top"></span>
+                <span class="line line-left"></span>
+                <span class="line line-right"></span>
+                <span class="line line-bottom"></span>
+                MISSION
+            </a>
+        </div>
+
+        <div class="link link-play">
+            <span class="icon"></span>
+            <a href="#" class="button" data-text="This is my playground">
+                <span class="line line-top"></span>
+                <span class="line line-left"></span>
+                <span class="line line-right"></span>
+                <span class="line line-bottom"></span>
+                PLAY
+            </a>
+        </div>
+
+        <div class="link link-touch">
+            <span class="icon"></span>
+            <a href="#" class="button" data-text="Let's do something together">
+                <span class="line line-top"></span>
+                <span class="line line-left"></span>
+                <span class="line line-right"></span>
+                <span class="line line-bottom"></span>
+                TOUCH
+            </a>
+        </div>
+
+        <div class="tooltip">
+            <em></em>
+            <span></span>
+        </div>
+    </div>
+<script src="../jquery-3.5.1.min.js"></script>
+    <script>
+        $(function () {
+            $(".button").hover(function () {
+                var titleText = $(this).attr("data-text");
+                // console.log(titleText);
+                $(".tooltip em").text(titleText); // 动态获取内容并添加
+                // 获取距离左边的位置
+                var leftLoc = $(this).offset().left;
+                var addleft = ($(".tooltip").outerWidth() - $(this).outerWidth()) / 2;
+                $(".tooltip").css({
+                    left:leftLoc - addleft,
+                    top:140
+                }).animate({
+                    top:195,
+                    opacity:1
+                },300)
+            },function () {
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #333;
+}
+a{
+    text-decoration: none;
+}
+.box{
+    width: 1000px;
+    height: 220px;
+    margin: 50px auto;
+}
+.box .link{
+    float: left;
+    margin: 0 20px;
+    width: 205px;
+    height: 280px;
+    position: relative;
+}
+.link-miss .icon{
+    background-image: url("mission_128.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.link-play .icon{
+    background-image: url("play_128.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.link-touch .icon{
+    background-image: url("touch_128.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.box .link .icon{
+    display: inline-block;
+    width: 100%;
+    height: 190px;
+    transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+}
+.box .link .icon:hover{
+    /*旋转 缩放*/
+    transform: rotate(360deg) scale(1.2);
+    -webkit-transform: rotate(360deg) scale(1.2);
+    -moz-transform: rotate(360deg) scale(1.2);
+    -o-transform: rotate(360deg) scale(1.2);
+}
+.box .link .button{
+    display: block;
+    width: 180px;
+    height: 50px;
+    border: 2px solid rgba(255,255,255,0.8);
+    line-height: 50px;
+    color: #2dcb70;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 0 0 20px;
+    box-sizing: border-box;
+    margin: auto;
+    background: url("allow.png") no-repeat 130px center;
+    transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+    position: relative;
+}
+.box .link .button:hover{
+    background-position: 140px center;
+    border-color: rgba(255,255,255,1);
+}
+.box .link .button .line{
+    position: absolute;
+    display: block;
+    background: none;
+    transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+}
+.box .link .button .line-top{
+    left: -100%;
+    top: -2px;
+    width: 0;
+    height: 2px;
+}
+.box .link .button:hover .line-top{
+    width: 180px;
+    background-color: #fff;
+    position: absolute;
+    left: -2px;
+    top: -2px;
+}
+.box .link .button .line-left{
+    width: 2px;
+    height: 0;
+    bottom: -100%;
+    left: -2px;
+}
+.box .link .button:hover .line-left{
+    height: 50px;
+    background: #fff;
+    left: -2px;
+    bottom: -2px;
+}
+.box .link .button .line-right{
+    width: 2px;
+    height: 10px;
+    top: -100%;
+    right: -2px;
+    /*background-color: red;*/
+}
+.box .link .button:hover .line-right{
+    height: 50px;
+    background-color: #ffffff;
+    top: -2px;
+    right: -2px;
+}
+.box .link .button .line-bottom{
+    right: -100%;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+}
+.box .link .button:hover .line-bottom{
+    right: -2px;
+    bottom: -2px;
+    background-color: #ffffff;
+    width: 180px;
+}
+.box .tooltip{
+    position: absolute;
+    padding: 0 15px;
+    height: 35px;
+    background-color: #2dcb70;
+    border-radius: 5px;
+    line-height: 35px;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    opacity: 0;
+}
+.box .tooltip span{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-top-color: #2dcb70;
+    left: 50%;
+    margin-left: -4px;
+    top: 100%;
+}
