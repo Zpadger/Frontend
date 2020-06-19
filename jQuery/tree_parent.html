@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>树遍历parent</title>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <!--<ul class="one" style="position:absolute">-->
+    <!--    <li>li 1</li>-->
+    <!--    <li class="two" style="position: relative">li 2-->
+    <!--        <ul class="three">-->
+    <!--            <li>item 1</li>-->
+    <!--            <li class="inner">item 2</li>-->
+    <!--            <li>item 3</li>-->
+    <!--        </ul>-->
+    <!--    </li>-->
+    <!--    <li>li 3</li>-->
+    <!--    <li>li 3</li>-->
+    <!--    <li>li 3</li>-->
+    <!--    <li>li 3</li>-->
+    <!--    <div>d1</div>-->
+    <!--    <div>d1</div>-->
+    <!--    <div>d1</div>-->
+    <!--    <div>d1</div>-->
+    <!--    <div>d1</div>-->
+    <!--</ul>-->
+
+    <div class="c1">
+        <ul class="c2">
+            <li class="c3">li 1
+                <ul class="c4">
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ul>
+            </li>
+            <li>li 2</li>
+            <li>li 3</li>
+        </ul>
+    </div>
+
+<script>
+    $(function () {
+        // $(".three").parent().css("border","1px solid green"); // 无参
+        // $("li").parent("ul").css("border","1px solid green"); // 有参数
+
+        // console.log($(".three").parents()); // 获得所有祖先元素
+
+        // console.log($(".inner").offsetParent()); // 不接受任何参数
+
+        console.log($(".c4").parentsUntil(".c1","ul")); // 查找当前元素所有前辈元素直到遇到选择器 可限制条件
+    })
+</script>
+</body>
+</html>
