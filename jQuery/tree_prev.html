@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>树遍历prev</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <style>
+        div{
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+            float: left;
+            border: 1px solid blue;
+        }
+        button{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div id="start"></div>
+    <div></div>
+    <button>go to prev</button>
+    <script>
+        $(function () {
+            var start = $("#start");
+            start.css("background-color","#f99");
+            $("button").click(function () {
+                // prev 取得一个包含匹配元素集合中每一个元素紧邻的前一个元素集合 选择性筛选的选择器
+                start = start.prev();
+                $("div").css("background-color","");
+                start.css("background-color","#f99");
+            })
+        })
+    </script>
+</body>
+</html>
