@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    1.导入Vue包-->
+    <script src="./lib/vue-2.6.11.js"></script>
+</head>
+<body>
+<!--    2.创建一个要控制的区域-->
+    <div id="app">
+        <input type="button" value="端午节" @click="start">
+        <input type="button" value="你好" @click="stop">
+        <h4>{{ msg }}</h4>
+    </div>
+
+    <script>
+        // 注意：在VM实例中，如果想要获取data上的数据，或者想要调用methods中的方法
+        // 必须通过this.数据属性名 或 this.方法名 来进行访问
+        // 这里的this就表示我们new出来的VM实例对象
+        var vm = new Vue({
+            el: '#app',
+            data:{
+                msg: '端午节安康！祝大家幸福~~',
+                intervalId:null // 在data上定义定时器ID
+            },
+            methods:{
+                start () {
+                    // console.log(this.msg);
+                    // var _this = this;
+                    // setInterval(function () {
+                    // this 箭头函数解决this指向问题 内部this与外部this保持一致 指向VM实例
+
+                    if (this.intervalId != null) return;
+                    this.intervalId = setInterval( () => { // 内部的this指向外部的this
+                        // 获取到头的第一个字符
+                        var start = this.msg.substring(0,1);
+                        // 获取到后面的所有字符
+                        var end = this.msg.substring(1);
+                        // 重新拼接得到新的字符串，并赋值给this.msg
+                        this.msg = end + start;
+                    },400)
+
+                    // 注意：VM实例会监听自己身上data中所有数据的改变，只要数据一变化
+                    // 就会自动把最新的数据从data上同步到页面中去
+                },
+                stop (){ // 停止计时器
+                    clearInterval(this.intervalId);
+                    // 每当清除定时器之后，需要重新把intervalId置为null
+                    this.intervalId = null;
+                }
+            }
+        })
+
+        // 1.给按钮绑定定一个点击事件 v-on @
+        // 2.在按钮的时间处理函数中，写相关的业务逻辑代码
+        // 拿到msg字符串，然后调用字符串的substring来进行字符串的截取操作
+        // 把第一个字符截取出来，放到最后一个位置
+        // 3.为了实现点击按钮自动截取的功能，需要把2步骤的代码，放到一个定时器中去
+    </script>
+
+</body>
+</html>
