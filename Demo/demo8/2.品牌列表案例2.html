@@ -50,7 +50,7 @@
         <tr v-for="item in search(keywords)" :key="item.id">
             <td>{{ item.id }}</td>
             <td v-text="item.name"></td>
-            <td>{{ item.ctime }}</td>
+            <td>{{ item.ctime | dateFormat }}</td>
             <td>
                 <!--阻止默认行为————刷新页面-->
                 <a href="" @click.prevent="del(item.id)">删除</a>
@@ -61,6 +61,21 @@
 </div>
 
 <script>
+    // 全局过滤器 进行时间的格式化
+    Vue.filter('dateFormat', function (dateStr) {
+        // 根据给定的时间字符串 得到特定的时间
+        var dt = new Date(dateStr);
+
+        // yyyy-mm-dd
+        var y = dt.getFullYear();
+        var m = dt.getMonth() + 1;
+        var d = dt.getDate();
+
+        // return y + '-' + m + '-' + d;
+        return `${y}-${m}-${d}`;
+    })
+
+
     // 创建 Vue 实例，得到 ViewModel
     var vm = new Vue({
         el: '#app',
