@@ -20,7 +20,7 @@
             </label>
             <label>
                 Name:
-                <input type="text" class="form-control" v-model="name">
+                <input type="text" class="form-control" v-model="name" @keyup.enter="add">
             </label>
 
             <!--                在 Vue 中，使用事件绑定机制，为元素指定处理函数的时候，如果加了小括号，就可以给函数传参-->
@@ -89,6 +89,9 @@
             return `${y}-${m}-${d} ${hh}:${mm}:${ss}`;
         }
     })
+
+    // 自定义全局按键修饰符
+    Vue.config.keyCodes.f2 = 113;
 
 
     // 创建 Vue 实例，得到 ViewModel
@@ -181,8 +184,8 @@
 
                 // yyyy-mm-dd
                 var y = dt.getFullYear();
-                var m = dt.getMonth() + 1;
-                var d = dt.getDate();
+                var m = (dt.getMonth() + 1).toString().padStart(2, '0'); // ES6 补0语法
+                var d = dt.getDate().toString().padStart(2, '0');
 
                 // return y + '-' + m + '-' + d;
                 // return `${y}-${m}-${d}`;
@@ -190,9 +193,9 @@
                 if (pattern && pattern.toLowerCase() === 'yyyy-mm-dd'){
                     return `${y}-${m}-${d}`;
                 }else {
-                    var hh = dt.getHours();
-                    var mm = dt.getMinutes();
-                    var ss = dt.getSeconds();
+                    var hh = dt.getHours().toString().padStart(2, '0');
+                    var mm = dt.getMinutes().toString().padStart(2, '0');
+                    var ss = dt.getSeconds().toString().padStart(2, '0');
 
                     return `${y}-${m}-${d} ${hh}:${mm}:${ss}~~~`;
                 }
