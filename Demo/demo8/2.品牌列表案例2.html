@@ -30,7 +30,7 @@
 
                 搜索名称关键字：
 <!--                在 Vue 中所有指令，在调用时都以 v- 开头-->
-                <input type="text" class="form-control" v-model="keywords" id="search" v-focus>
+                <input type="text" class="form-control" v-model="keywords" id="search" v-focus v-color="'blue'">
             </label>
         </div>
     </div>
@@ -107,12 +107,29 @@
         },
         inserted: function (el) { // inserted 表示元素插入到 DOM 中时，会执行 inserted 函数，触发1次
             el.focus();
+            // 和 JS 行为有关的操作，最好在 inserted 中去执行，防止 JS 行为不生效
         },
         update: function (el) { // 当 VNode 更新的时候，会执行 updated 可能会触发多次
 
         }
 
     })  // 全局不用加s
+
+    // 自定义一个设置字体颜色的指令
+    Vue.directive('color', {
+        // 样式 只要通过指令绑定给元素 不管元素有没有被插入到页面中去 这个元素肯定有了一个内联样式
+        // 将来元素肯定会显示到页面中去 这时候浏览器的渲染引擎必然会解析样式应用给该元素
+        bind: function (el, binding) {
+            // el.style.color = 'red';
+            // 和样式相关的操作，一般都可以在 bind 中执行
+            console.log(binding.name);
+            console.log(binding.value);
+            console.log(binding.expression);
+
+            // 自定义指令 通过 binding 获取参数值
+            el.style.color = binding.value;
+        }
+    })
 
 
     // 创建 Vue 实例，得到 ViewModel
