@@ -62,7 +62,7 @@
 </div>
 
 <div id="app2">
-    <h3 v-color="'pink'" v-fontweight="900">{{ dt | dateFormat }}</h3>
+    <h3 v-color="'pink'" v-fontweight="900" v-fontsize="'50'">{{ dt | dateFormat }}</h3>
 </div>
 
 <script>
@@ -240,10 +240,14 @@
             }
         },
         directives: { // 自定义私有指令
-            'fontweight':{
+            'fontweight':{ // 设置字体粗细
                 bind:function (el, binding) {
                     el.style.fontWeight = binding.value;
                 }
+            },
+            // 自定义指令 设置字体大小
+            'fontsize':function (el, binding) { // 注意 这个 function 等同于把代码写到 bind 和 update 中去
+                el.style.fontSize = parseInt(binding.value) + 'px';
             }
 
         }
