@@ -60,8 +60,13 @@
     </table>
 </div>
 
+<div id="app2">
+    <h3>{{ dt | dateFormat }}</h3>
+</div>
+
 <script>
     // 全局过滤器 进行时间的格式化
+    // 全局过滤器 所有的 VM 实例都可以共享
     Vue.filter('dateFormat', function (dateStr, pattern="") {
         // 根据给定的时间字符串 得到特定的时间
         var dt = new Date(dateStr);
@@ -72,7 +77,7 @@
         var d = dt.getDate();
 
         // return y + '-' + m + '-' + d;
-        return `${y}-${m}-${d}`;
+        // return `${y}-${m}-${d}`;
 
         if (pattern && pattern.toLowerCase() === 'yyyy-mm-dd'){
             return `${y}-${m}-${d}`;
@@ -160,6 +165,40 @@
             }
         }
     });
+
+    // 如何自定义一个私有过滤器
+    var vm2 = new Vue({
+        el: '#app2',
+        data:{
+            dt: new Date()
+        },
+        methods: {},
+        filters: { // 定义私有过滤器 有两个条件 过滤器名称 和 处理函数
+            // 过滤器调用采用的是就近原则
+            // 如果私有过滤器和全局过滤器名称一致 优先调用私有过滤器
+            dateFormat:function (dateStr, pattern='') {
+                var dt = new Date(dateStr);
+
+                // yyyy-mm-dd
+                var y = dt.getFullYear();
+                var m = dt.getMonth() + 1;
+                var d = dt.getDate();
+
+                // return y + '-' + m + '-' + d;
+                // return `${y}-${m}-${d}`;
+
+                if (pattern && pattern.toLowerCase() === 'yyyy-mm-dd'){
+                    return `${y}-${m}-${d}`;
+                }else {
+                    var hh = dt.getHours();
+                    var mm = dt.getMinutes();
+                    var ss = dt.getSeconds();
+
+                    return `${y}-${m}-${d} ${hh}:${mm}:${ss}~~~`;
+                }
+            }
+        }
+    })
 
     // 过滤器的定义语法
     // Vue.filter('过滤器的名称', function () {})
