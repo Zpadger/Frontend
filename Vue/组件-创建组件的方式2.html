@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./lib/vue-2.6.11.js"></script>
+</head>
+<body>
+<div id="app">
+<!--    还是使用标签形式来引入自己的组件-->
+<!--    注意：无论是哪种方式创建出来的组件，组件的 template 属性指向的模板内容，必须有且只能有唯一的根元素-->
+    <mycom2></mycom2>
+</div>
+
+<script>
+    Vue.component('mycom2', {
+        template: '<h3>这是直接使用 Vue.component 创建出来的组件</h3>'
+    })
+    // 创建 Vue 实例，得到 ViewModel
+    var vm = new Vue({
+        el: '#app',
+        data: {},
+        methods: {}
+    });
+</script>
+
+</body>
+</html>
