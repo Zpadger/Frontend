@@ -63,7 +63,10 @@
         不能使用 transition 包裹，需要使用 transitionGroup -->
 
 <!--        如果要为 v-for 循环创建元素设置动画，必须为每一个元素设置 :key 属性-->
-        <transition-group>
+<!--        给 transition-group 添加 appear 属性实现页面刚展示出来入场效果-->
+<!--        通过为 transition-group 元素设置 tag 属性，transition-group 渲染为指定的元素
+            如果不指定 tag 属性，默认渲染为 span 标签 -->
+        <transition-group appear tag="ul">
             <li v-for="(item,i) in list" :key="item.id" @click="del(i)">
                 {{item.id}} --- {{item.name}}
             </li>
