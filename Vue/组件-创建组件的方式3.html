@@ -10,12 +10,21 @@
     <mycom3></mycom3>
 </div>
 
+<div id="app2">
+    <mycom3></mycom3>
+    <login></login>
+</div>
+
 <!--    在被控制的 #app 外面，使用 template 元素，定义组件的 HTML 模板结构-->
 <template id="tmp1">
     <div>
         <h1>这是通过 template 元素，在外部定义的组件结构，这方式有代码提示和高亮</h1>
         <h4>好用</h4>
     </div>
+</template>
+
+<template id="tmp2">
+    <h1>这是私有的 login 组件</h1>
 </template>
 
 <script>
@@ -28,6 +37,28 @@
         data: {},
         methods: {}
     });
+
+    var vm2 = new Vue({
+        el: '#app2',
+        data: {},
+        methods: {},
+        filters: {},
+        directives: {},
+        components: { // 定义实例内部私有组件
+            login: {
+                template: '#tmp2'
+            }
+        },
+
+        beforeCreate() {},
+        created(){},
+        beforeMount(){},
+        mounted(){},
+        beforeUpdate() {},
+        updated(){},
+        beforeDestroy() {},
+        destroyed(){}
+    })
 </script>
 
 </body>
