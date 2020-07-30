@@ -18,4 +18,5 @@
 [Leetcode 62. 不同路径 难度 Medium](https://leetcode-cn.com/problems/unique-paths/)  
 [Leetcode 64. 最小路径和 难度 Medium](https://leetcode-cn.com/problems/minimum-path-sum/)  
 [Leetcode 66. 加一 难度 Easy](https://leetcode-cn.com/problems/plus-one/)  
-[Leetcode 69. x 的平方根 难度 Easy](https://leetcode-cn.com/problems/sqrtx/)
+[Leetcode 69. x 的平方根 难度 Easy](https://leetcode-cn.com/problems/sqrtx/)  
+[Leetcode 70. 爬楼梯 难度 Easy](https://leetcode-cn.com/problems/climbing-stairs/)
