@@ -12,4 +12,5 @@
 [Leetcode 53. 最大子序和 难度 Easy](https://leetcode-cn.com/problems/maximum-subarray/)  
 [Leetcode 54. 螺旋矩阵 难度 Medium](https://leetcode-cn.com/problems/spiral-matrix/)  
 [Leetcode 55. 跳跃游戏 难度 Medium](https://leetcode-cn.com/problems/jump-game/)  
-[Leetcode 56. 合并区间 难度 Medium](https://leetcode-cn.com/problems/merge-intervals/)
+[Leetcode 56. 合并区间 难度 Medium](https://leetcode-cn.com/problems/merge-intervals/)  
+[Leetcode 61. 旋转链表 难度 Medium](https://leetcode-cn.com/problems/rotate-list/)
