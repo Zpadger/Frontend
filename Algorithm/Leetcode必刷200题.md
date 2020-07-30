@@ -7,4 +7,5 @@
 [Leetcode 40. 组合总和 II 难度 Medium](https://leetcode-cn.com/problems/combination-sum-ii/)  
 [Leetcode 46. 全排列 难度 Medium](https://leetcode-cn.com/problems/permutations/)  
 [Leetcode 48. 旋转图像 难度 Medium](https://leetcode-cn.com/problems/rotate-image/)  
-[Leetcode 49. 字母异位词分组 难度 Medium](https://leetcode-cn.com/problems/group-anagrams/)
+[Leetcode 49. 字母异位词分组 难度 Medium](https://leetcode-cn.com/problems/group-anagrams/)  
+[Leetcode 50. Pow(x, n) 难度 Medium](https://leetcode-cn.com/problems/powx-n/)
