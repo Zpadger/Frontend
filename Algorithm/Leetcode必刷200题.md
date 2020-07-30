@@ -15,4 +15,5 @@
 [Leetcode 55. 跳跃游戏 难度 Medium](https://leetcode-cn.com/problems/jump-game/)  
 [Leetcode 56. 合并区间 难度 Medium](https://leetcode-cn.com/problems/merge-intervals/)  
 [Leetcode 61. 旋转链表 难度 Medium](https://leetcode-cn.com/problems/rotate-list/) 注：如果都用快慢指针的方法，其实和[Leetcode 19. 删除链表的倒数第N个节点 难度 Medium](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)是一道题  
-[Leetcode 62. 不同路径 难度 Medium](https://leetcode-cn.com/problems/unique-paths/)
+[Leetcode 62. 不同路径 难度 Medium](https://leetcode-cn.com/problems/unique-paths/)  
+[Leetcode 64. 最小路径和 难度 Medium](https://leetcode-cn.com/problems/minimum-path-sum/)
