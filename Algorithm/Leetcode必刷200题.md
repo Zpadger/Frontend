@@ -20,4 +20,5 @@
 [Leetcode 66. 加一 难度 Easy](https://leetcode-cn.com/problems/plus-one/)  
 [Leetcode 69. x 的平方根 难度 Easy](https://leetcode-cn.com/problems/sqrtx/)  
 [Leetcode 70. 爬楼梯 难度 Easy](https://leetcode-cn.com/problems/climbing-stairs/)  
-[Leetcode 75. 颜色分类 难度 Medium](https://leetcode-cn.com/problems/sort-colors/)
+[Leetcode 75. 颜色分类 难度 Medium](https://leetcode-cn.com/problems/sort-colors/)  
+[Leetcode 78. 子集 难度 Medium](https://leetcode-cn.com/problems/subsets/)
