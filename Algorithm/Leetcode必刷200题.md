@@ -23,4 +23,5 @@
 [Leetcode 75. 颜色分类 难度 Medium](https://leetcode-cn.com/problems/sort-colors/)  
 [Leetcode 78. 子集 难度 Medium](https://leetcode-cn.com/problems/subsets/)  
 [Leetcode 79. 单词搜索 难度 Medium](https://leetcode-cn.com/problems/word-search/)  
-[Leetcode 83. 删除排序链表中的重复元素 难度 Easy](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)
+[Leetcode 83. 删除排序链表中的重复元素 难度 Easy](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)  
+[Leetcode 86. 分隔链表 难度 Medium](https://leetcode-cn.com/problems/partition-list/)
