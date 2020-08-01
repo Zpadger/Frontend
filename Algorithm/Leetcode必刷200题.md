@@ -62,4 +62,5 @@
 [Leetcode 118. 杨辉三角 难度 Easy](https://leetcode-cn.com/problems/pascals-triangle/)  
 [Leetcode 121. 买卖股票的最佳时机 难度 Easy](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)  
 [Leetcode 122. 买卖股票的最佳时机 II 难度 Easy](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)  
-[Leetcode 125. 验证回文串 难度 Easy](https://leetcode-cn.com/problems/valid-palindrome/)
+[Leetcode 125. 验证回文串 难度 Easy](https://leetcode-cn.com/problems/valid-palindrome/)  
+[Leetcode 136. 只出现一次的数字 难度 Easy](https://leetcode-cn.com/problems/single-number/)
