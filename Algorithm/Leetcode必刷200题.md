@@ -59,4 +59,5 @@
 [Leetcode 109. 有序链表转换二叉搜索树 难度 Medium](https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree/)  
 [Leetcode 113. 路径总和 II 难度 Medium](https://leetcode-cn.com/problems/path-sum-ii/)  
 [Leetcode 114. 二叉树展开为链表 难度 Medium](https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/)  
-[Leetcode 118. 杨辉三角 难度 Easy](https://leetcode-cn.com/problems/pascals-triangle/)
+[Leetcode 118. 杨辉三角 难度 Easy](https://leetcode-cn.com/problems/pascals-triangle/)  
+[Leetcode 121. 买卖股票的最佳时机 难度 Easy](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)
