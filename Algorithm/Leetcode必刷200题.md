@@ -58,4 +58,5 @@
 [Leetcode 108. 将有序数组转换为二叉搜索树 难度 Easy](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/)  
 [Leetcode 109. 有序链表转换二叉搜索树 难度 Medium](https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree/)  
 [Leetcode 113. 路径总和 II 难度 Medium](https://leetcode-cn.com/problems/path-sum-ii/)  
-[Leetcode 114. 二叉树展开为链表 难度 Medium](https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/)
+[Leetcode 114. 二叉树展开为链表 难度 Medium](https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/)  
+[Leetcode 118. 杨辉三角 难度 Easy](https://leetcode-cn.com/problems/pascals-triangle/)
