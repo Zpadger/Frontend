@@ -67,4 +67,5 @@
 [Leetcode 137. 只出现一次的数字 II 难度 Medium](https://leetcode-cn.com/problems/single-number-ii/)  
 [Leetcode 139. 单词拆分 难度 Medium](https://leetcode-cn.com/problems/word-break/)  
 [Leetcode 141. 环形链表 难度 Easy](https://leetcode-cn.com/problems/linked-list-cycle/)  
-[Leetcode 142. 环形链表 II 难度 Medium](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
+[Leetcode 142. 环形链表 II 难度 Medium](https://leetcode-cn.com/problems/linked-list-cycle-ii/)  
+[Leetcode 143. 重排链表 难度 Medium](https://leetcode-cn.com/problems/reorder-list/)
