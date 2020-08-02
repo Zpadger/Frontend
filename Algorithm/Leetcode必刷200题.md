@@ -75,4 +75,5 @@
 [Leetcode 150. 逆波兰表达式求值 难度 Medium](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/)  
 [Leetcode 152. 乘积最大子数组 难度 Medium](https://leetcode-cn.com/problems/maximum-product-subarray/)  
 [Leetcode 155. 最小栈 难度 Easy](https://leetcode-cn.com/problems/min-stack/)  
-[Leetcode 160. 相交链表 难度 Easy](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)
+[Leetcode 160. 相交链表 难度 Easy](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)  
+[Leetcode 162. 寻找峰值 难度 Medium](https://leetcode-cn.com/problems/find-peak-element/)
