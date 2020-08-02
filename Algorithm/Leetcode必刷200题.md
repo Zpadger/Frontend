@@ -68,4 +68,5 @@
 [Leetcode 139. 单词拆分 难度 Medium](https://leetcode-cn.com/problems/word-break/)  
 [Leetcode 141. 环形链表 难度 Easy](https://leetcode-cn.com/problems/linked-list-cycle/)  
 [Leetcode 142. 环形链表 II 难度 Medium](https://leetcode-cn.com/problems/linked-list-cycle-ii/)  
-[Leetcode 143. 重排链表 难度 Medium](https://leetcode-cn.com/problems/reorder-list/)
+[Leetcode 143. 重排链表 难度 Medium](https://leetcode-cn.com/problems/reorder-list/)  
+[Leetcode 144. 二叉树的前序遍历 难度 Medium](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)
