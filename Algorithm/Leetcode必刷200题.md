@@ -72,4 +72,5 @@
 [Leetcode 144. 二叉树的前序遍历 难度 Medium](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)  
 [Leetcode 146. LRU缓存机制 难度 Medium](https://leetcode-cn.com/problems/lru-cache/)  
 [Leetcode 148. 排序链表 难度 Medium](https://leetcode-cn.com/problems/sort-list/)  
-[Leetcode 150. 逆波兰表达式求值 难度 Medium](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/)
+[Leetcode 150. 逆波兰表达式求值 难度 Medium](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/)  
+[Leetcode 152. 乘积最大子数组 难度 Medium](https://leetcode-cn.com/problems/maximum-product-subarray/)
