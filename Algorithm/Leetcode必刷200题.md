@@ -82,7 +82,7 @@
 [Leetcode 172. 阶乘后的零 难度 Easy](https://leetcode-cn.com/problems/factorial-trailing-zeroes/)  
 [Leetcode 179. 最大数 难度 Medium](https://leetcode-cn.com/problems/largest-number/)  
 [Leetcode 187. 重复的DNA序列 难度 Medium](https://leetcode-cn.com/problems/repeated-dna-sequences/)  
-[Leetcode]()  
+[Leetcode 189. 旋转数组 难度 Easy](https://leetcode-cn.com/problems/rotate-array/)  
 [Leetcode]()  
 [Leetcode]()  
 [Leetcode]()  
