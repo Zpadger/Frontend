@@ -95,7 +95,7 @@
 [Leetcode 225. 用队列实现栈 难度 Easy](https://leetcode-cn.com/problems/implement-stack-using-queues/)  
 [Leetcode 226. 翻转二叉树 难度 Easy](https://leetcode-cn.com/problems/invert-binary-tree/)  
 [Leetcode 227. 基本计算器 II 难度 Medium](https://leetcode-cn.com/problems/basic-calculator-ii/)  
-[Leetcode]()  
+[Leetcode 230. 二叉搜索树中第K小的元素 难度 Medium](https://leetcode-cn.com/problems/kth-smallest-element-in-a-bst/)  
 [Leetcode]()  
 [Leetcode]()  
 [Leetcode]()  
