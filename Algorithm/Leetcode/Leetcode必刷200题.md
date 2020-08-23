@@ -109,7 +109,7 @@
 [Leetcode 279. 完全平方数 难度 Medium](https://leetcode-cn.com/problems/perfect-squares/)  
 [Leetcode 283. 移动零 难度 Easy](https://leetcode-cn.com/problems/move-zeroes/)  
 [Leetcode 287. 寻找重复数 难度 Medium](https://leetcode-cn.com/problems/find-the-duplicate-number/)  
-[Leetcode]()  
+[Leetcode 292. Nim 游戏 难度 Easy](https://leetcode-cn.com/problems/nim-game/)  
 [Leetcode]()  
 [Leetcode]()  
 [Leetcode]()  
