@@ -105,7 +105,7 @@
 [Leetcode 240. 搜索二维矩阵 II 难度 Medium](https://leetcode-cn.com/problems/search-a-2d-matrix-ii/)  
 [Leetcode 242. 有效的字母异位词 难度 Easy](https://leetcode-cn.com/problems/valid-anagram/)  
 [Leetcode 258. 各位相加 难度 Easy](https://leetcode-cn.com/problems/add-digits/)  
-[Leetcode]()  
+[Leetcode 268. 缺失数字 难度 Easy](https://leetcode-cn.com/problems/missing-number/)  
 [Leetcode]()  
 [Leetcode]()  
 [Leetcode]()  
