@@ -114,7 +114,7 @@
 [Leetcode 313. 超级丑数 难度 Medium](https://leetcode-cn.com/problems/super-ugly-number/)  
 [Leetcode 322. 零钱兑换 难度 Medium](https://leetcode-cn.com/problems/coin-change/)  
 [Leetcode 326. 3的幂 难度 Easy](https://leetcode-cn.com/problems/power-of-three/)  
-[Leetcode]()  
+[Leetcode 328. 奇偶链表 难度 Medium](https://leetcode-cn.com/problems/odd-even-linked-list/)  
 [Leetcode]()  
 [Leetcode]()  
 [Leetcode]()  
