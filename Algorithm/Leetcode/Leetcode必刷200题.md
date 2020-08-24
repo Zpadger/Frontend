@@ -127,7 +127,7 @@
 [Leetcode 402. 移掉K位数字 难度 Medium](https://leetcode-cn.com/problems/remove-k-digits/)  
 [Leetcode 406. 根据身高重建队列 难度 Medium](https://leetcode-cn.com/problems/queue-reconstruction-by-height/)  
 [Leetcode 409. 最长回文串 难度 Easy](https://leetcode-cn.com/problems/longest-palindrome/)  
-[Leetcode]()  
+[Leetcode 412. Fizz Buzz 难度 Easy](https://leetcode-cn.com/problems/fizz-buzz/)  
 [Leetcode]()  
 [Leetcode]()  
 [Leetcode]()  
