@@ -115,7 +115,7 @@
 [Leetcode 322. 零钱兑换 难度 Medium](https://leetcode-cn.com/problems/coin-change/)  
 [Leetcode 326. 3的幂 难度 Easy](https://leetcode-cn.com/problems/power-of-three/)  
 [Leetcode 328. 奇偶链表 难度 Medium](https://leetcode-cn.com/problems/odd-even-linked-list/)  
-[Leetcode]()  
+[Leetcode 334. 递增的三元子序列 难度 Medium](https://leetcode-cn.com/problems/increasing-triplet-subsequence/)  
 [Leetcode]()  
 [Leetcode]()  
 [Leetcode]()  
