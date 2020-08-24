@@ -116,7 +116,7 @@
 [Leetcode 326. 3的幂 难度 Easy](https://leetcode-cn.com/problems/power-of-three/)  
 [Leetcode 328. 奇偶链表 难度 Medium](https://leetcode-cn.com/problems/odd-even-linked-list/)  
 [Leetcode 334. 递增的三元子序列 难度 Medium](https://leetcode-cn.com/problems/increasing-triplet-subsequence/)  
-[Leetcode 198. 打家劫舍 难度 Easy](https://leetcode-cn.com/problems/house-robber/)  
+[Leetcode 337. 打家劫舍 III 难度 Medium](https://leetcode-cn.com/problems/house-robber-iii/)  
 [Leetcode]()  
 [Leetcode]()  
 [Leetcode]()  
