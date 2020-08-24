@@ -145,7 +145,7 @@
 [Leetcode 654. 最大二叉树 难度 Medium](https://leetcode-cn.com/problems/maximum-binary-tree/)  
 [Leetcode 717. 1比特与2比特字符 难度 Easy](https://leetcode-cn.com/problems/1-bit-and-2-bit-characters/)  
 [Leetcode 718. 最长重复子数组 难度 Medium](https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray/)  
-[Leetcode]()  
+[Leetcode 728. 自除数 难度 Easy](https://leetcode-cn.com/problems/self-dividing-numbers/)  
 [Leetcode]()  
 [Leetcode]()  
 [Leetcode]()  
