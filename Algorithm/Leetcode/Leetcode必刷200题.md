@@ -156,7 +156,7 @@
 [Leetcode 剑指 Offer 04. 二维数组中的查找 难度 Easy](https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)  
 [Leetcode 剑指 Offer 10- II. 青蛙跳台阶问题 难度 Easy](https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/)  
 [Leetcode 剑指 Offer 11. 旋转数组的最小数字 难度 Easy](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/)  
-[Leetcode]()  
+[Leetcode 剑指 Offer 05. 替换空格 难度 Easy](https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/solution/xiao-bai-ke-dong-by-ppx-u-5/)  
 [Leetcode]()  
 [Leetcode]()  
 [Leetcode]()  
