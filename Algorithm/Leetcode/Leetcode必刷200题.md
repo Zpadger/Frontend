@@ -124,7 +124,7 @@
 [Leetcode 371. 两整数之和 难度 Easy](https://leetcode-cn.com/problems/sum-of-two-integers/)  
 [Leetcode 378. 有序矩阵中第K小的元素 难度 Medium](https://leetcode-cn.com/problems/kth-smallest-element-in-a-sorted-matrix/)  
 [Leetcode 394. 字符串解码 难度 Medium](https://leetcode-cn.com/problems/decode-string/)  
-[Leetcode]()  
+[Leetcode 402. 移掉K位数字 难度 Medium](https://leetcode-cn.com/problems/remove-k-digits/)  
 [Leetcode]()  
 [Leetcode]()  
 [Leetcode]()  
