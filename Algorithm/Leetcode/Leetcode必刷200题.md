@@ -159,7 +159,7 @@
 [Leetcode 剑指 Offer 05. 替换空格 难度 Easy](https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/solution/xiao-bai-ke-dong-by-ppx-u-5/)  
 [Leetcode 剑指 Offer 06. 从尾到头打印链表 难度 Easy](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)  
 [Leetcode 剑指 Offer 07. 重建二叉树 难度 Medium](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/)  
-[Leetcode]()  
+[Leetcode 剑指 Offer 14- I. 剪绳子 难度 Medium](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/)  
 [Leetcode]()  
 [Leetcode]()  
 [Leetcode]()  
