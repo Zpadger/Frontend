@@ -169,7 +169,7 @@
 [Leetcode 剑指 Offer 29. 顺时针打印矩阵 难度 Easy](https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/)  
 [Leetcode 剑指 Offer 22. 链表中倒数第k个节点 难度 Easy](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)  
 [Leetcode 剑指 Offer 18. 删除链表的节点 难度 Easy](https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/)  
-[Leetcode]()  
+[Leetcode 剑指 Offer 16. 数值的整数次方 难度 Medium](https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/)  
 [Leetcode]()  
 [Leetcode]()  
 [Leetcode]()  
