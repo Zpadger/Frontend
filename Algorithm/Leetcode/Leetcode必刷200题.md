@@ -171,7 +171,7 @@
 [Leetcode 剑指 Offer 18. 删除链表的节点 难度 Easy](https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/)  
 [Leetcode 剑指 Offer 16. 数值的整数次方 难度 Medium](https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/)  
 [Leetcode 剑指 Offer 24. 反转链表 难度 Easy](https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/)  
-[Leetcode]()  
+[Leetcode 剑指 Offer 40. 最小的k个数 难度 Easy](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/)  
 [Leetcode]()  
 [Leetcode]()  
 [Leetcode]()  
