@@ -174,7 +174,7 @@
 [Leetcode 剑指 Offer 40. 最小的k个数 难度 Easy](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/)  
 [Leetcode 剑指 Offer 30. 包含min函数的栈 难度 Easy](https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/)  
 [Leetcode 剑指 Offer 42. 连续子数组的最大和 难度 Easy](https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/)  
-[Leetcode]()  
+[Leetcode 剑指 Offer 36. 二叉搜索树与双向链表 难度 Medium](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/)  
 [Leetcode]()  
 [Leetcode]()  
 [Leetcode]()  
