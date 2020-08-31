@@ -175,7 +175,7 @@
 [Leetcode 剑指 Offer 30. 包含min函数的栈 难度 Easy](https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/)  
 [Leetcode 剑指 Offer 42. 连续子数组的最大和 难度 Easy](https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/)  
 [Leetcode 剑指 Offer 36. 二叉搜索树与双向链表 难度 Medium](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/)  
-[Leetcode]()  
+[Leetcode 剑指 Offer 31. 栈的压入、弹出序列 难度 Medium](https://leetcode-cn.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/)  
 [Leetcode]()  
 [Leetcode]()  
 [Leetcode]()  
