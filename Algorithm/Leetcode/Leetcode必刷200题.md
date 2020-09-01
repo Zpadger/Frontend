@@ -189,7 +189,7 @@
 [Leetcode 剑指 Offer 56 - II. 数组中数字出现的次数 II 难度 Medium](https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/)  
 [Leetcode 剑指 Offer 57. 和为s的两个数字 难度 Easy](https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/)  
 [Leetcode 剑指 Offer 45. 把数组排成最小的数 难度 Medium](https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/)  
-[Leetcode]()  
+[Leetcode 剑指 Offer 57 - II. 和为s的连续正数序列 难度 Easy](https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)  
 [Leetcode]()  
 [Leetcode]()  
 [Leetcode]()  
