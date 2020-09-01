@@ -183,7 +183,7 @@
 [Leetcode 剑指 Offer 32 - III. 从上到下打印二叉树 III 难度 Medium](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/)  
 [Leetcode 剑指 Offer 33. 二叉搜索树的后序遍历序列 难度 Medium](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/)  
 [Leetcode 剑指 Offer 50. 第一个只出现一次的字符 难度 Easy](https://leetcode-cn.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/)  
-[Leetcode]()  
+[Leetcode 剑指 Offer 34. 二叉树中和为某一值的路径 难度 Medium](https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/)  
 [Leetcode]()  
 [Leetcode]()  
 [Leetcode]()  
