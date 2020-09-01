@@ -178,7 +178,7 @@
 [Leetcode 剑指 Offer 31. 栈的压入、弹出序列 难度 Medium](https://leetcode-cn.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/)  
 [Leetcode 剑指 Offer 38. 字符串的排列 难度 Medium](https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof/)  
 [Leetcode 剑指 Offer 39. 数组中出现次数超过一半的数字 难度 Easy](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/)  
-[Leetcode]()  
+[Leetcode 剑指 Offer 32 - I. 从上到下打印二叉树 难度 Medium](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/)  
 [Leetcode]()  
 [Leetcode]()  
 [Leetcode]()  
