@@ -187,7 +187,7 @@
 [Leetcode 剑指 Offer 55 - I. 二叉树的深度 难度 Easy](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/)  
 [Leetcode 剑指 Offer 56 - I. 数组中数字出现的次数 难度 Medium](https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/)  
 [Leetcode 剑指 Offer 56 - II. 数组中数字出现的次数 II 难度 Medium](https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/)  
-[Leetcode]()  
+[Leetcode 剑指 Offer 57. 和为s的两个数字 难度 Easy](https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/)  
 [Leetcode]()  
 [Leetcode]()  
 [Leetcode]()  
