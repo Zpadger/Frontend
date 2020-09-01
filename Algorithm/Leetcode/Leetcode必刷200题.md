@@ -194,7 +194,7 @@
 [Leetcode 剑指 Offer 47. 礼物的最大价值 难度 Medium](https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/)  
 [Leetcode 剑指 Offer 58 - I. 翻转单词顺序 难度 Easy](https://leetcode-cn.com/problems/fan-zhuan-dan-ci-shun-xu-lcof/)  
 [Leetcode 剑指 Offer 53 - I. 在排序数组中查找数字 I 难度 Easy](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)  
-[Leetcode]()  
+[Leetcode 剑指 Offer 58 - II. 左旋转字符串 难度 Easy](https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/)  
 [Leetcode]()  
 [Leetcode]()  
 [Leetcode]()  
