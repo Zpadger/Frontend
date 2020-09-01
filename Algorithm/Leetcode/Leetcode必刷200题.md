@@ -190,7 +190,7 @@
 [Leetcode 剑指 Offer 57. 和为s的两个数字 难度 Easy](https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/)  
 [Leetcode 剑指 Offer 45. 把数组排成最小的数 难度 Medium](https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/)  
 [Leetcode 剑指 Offer 57 - II. 和为s的连续正数序列 难度 Easy](https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)  
-[Leetcode]()  
+[Leetcode 剑指 Offer 52. 两个链表的第一个公共节点 难度 Easy](https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/)  
 [Leetcode]()  
 [Leetcode]()  
 [Leetcode]()  
