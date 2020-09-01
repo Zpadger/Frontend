@@ -181,7 +181,7 @@
 [Leetcode 剑指 Offer 32 - I. 从上到下打印二叉树 难度 Medium](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/)  
 [Leetcode 剑指 Offer 32 - II. 从上到下打印二叉树 II 难度 Easy](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/)  
 [Leetcode 剑指 Offer 32 - III. 从上到下打印二叉树 III 难度 Medium](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/)  
-[Leetcode]()  
+[Leetcode 剑指 Offer 33. 二叉搜索树的后序遍历序列 难度 Medium](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/)  
 [Leetcode]()  
 [Leetcode]()  
 [Leetcode]()  
