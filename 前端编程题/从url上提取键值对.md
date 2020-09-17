@@ -3,10 +3,13 @@
 ### 思路  
 1.先对url进行处理，获取 ？后的字符串  
 > 'postid=10457794&actiontip=保存修改成功'  
+
 2.字符串通过&标识，不同参数转为数组  
 > ["postid=10457794", "actiontip=保存修改成功"]  
+
 3.分别将 = 左右两边拆分为数组, 动态变为键值对  
 > ["postid", "10457794"]  
+
 ### 代码 
 ```javascript
 function getParamsFromUrl(url){
