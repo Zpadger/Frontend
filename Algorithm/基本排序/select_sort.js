@@ -18,7 +18,7 @@ function selectSort(myArr) {
             }
         }
         //将当前（第i次查找）查找到的最小值 myArr[minIndex]和当前值（myArr[i]）位置互换
-        //minIndex始终保存着最小值的位置的索引，随着i的自增，遍历的数组长度越来越短，直到完成排序。
+        //minIndex始终保存着最小值的位置的索引，随着i的自增，遍历的数组长度越来越短，直到完成排序
         [myArr[i], myArr[minIndex]] = [myArr[minIndex], myArr[i]];
     }
     return myArr;
