@@ -7,7 +7,8 @@ function arrData(num){
 }
 
 arrData(10);
-function qSort(myArr){
+
+function quickSort(myArr){
     if (myArr.length === 0) return [];
     let smallArr = [];
     let bigArr = [];
@@ -19,6 +20,6 @@ function qSort(myArr){
             bigArr.push(myArr[i]);
         }
     }
-    return qSort(smallArr).concat(pivot, qSort(bigArr));
+    return quickSort(smallArr).concat(pivot, quickSort(bigArr));
 }
-console.log(qSort(arr));
+console.log(quickSort(arr));
