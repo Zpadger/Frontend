@@ -5,7 +5,7 @@ function arrData(num) {
         arr[i] = Math.floor(Math.random() * num + 1)
     }
 }
-arrData(10)
+arrData(10);
 
 function insertsort(myArr) {
     let tmp, j;
