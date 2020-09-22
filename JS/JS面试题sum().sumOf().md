@@ -5,7 +5,7 @@ sum(2, 3)(2).sumOf(); //7
 sum(1)(2)(3)(4).sumOf(); //10  
 sum(2)(4, 1)(2).sumOf(); //9
 ```
-
+[思路链接](https://github.com/NevenLeung/blog/issues/2)
 
 
 
