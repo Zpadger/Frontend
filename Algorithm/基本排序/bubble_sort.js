@@ -28,7 +28,7 @@ function bubble_sort1(myArr) {
 let arr2 = bubble_sort1(arr);
 console.log(arr2);
 
-// 不通过添加中间变量实现冒泡排序
+// 不添加中间变量实现冒泡排序
 function bubble_sort2(myArr) {
     for (let i = 0; i < myArr.length - 1; i++){
         for (let j = 0; j < myArr.length - 1; j++){
